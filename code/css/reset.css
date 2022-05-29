@@ -1,0 +1,59 @@
+*{margin: 0; padding: 0;}
+html {
+  scroll-behavior: smooth;
+}
+body
+{
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+/* -------------------- */
+/*      main frame      */
+/* -------------------- */
+.reset
+{
+    position: relative;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 10vh auto;
+}
+.reset::before
+{
+    content: "";
+    height: 170%;
+    width: 200%;
+    position: absolute;
+    background: conic-gradient(
+        #fd004c,
+        #fe9000,
+        #fff020,
+        #3edf4b,
+        #3363ff,
+        #b102b7,
+        #fd004c
+    );
+    filter: contrast(200%);
+    z-index: -1;
+    animation: spin 1.5s infinite linear;
+}
+@keyframes spin{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.reset::after
+{
+    content: '';
+    position: absolute;
+    background-color: #160330;
+    inset: 5px;
+    border-radius: 18px;
+    z-index: -1;
+}
