@@ -9,7 +9,7 @@
         <?php
         header("location:work.php");
     }
-  $class = 'bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-rose-600 focus:bg-gray-900 focus:ring-2 focus:ring-pink-600 text-base outline-none text-rose-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out w-full';
+  $class = 'bg-gray-800 bg-opacity-90 rounded border border-gray-700 focus:border-rose-600 focus:bg-gray-900 focus:ring-2 focus:ring-pink-600 text-base outline-none text-rose-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out w-full shadow-2xl shadow-black';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -52,18 +52,18 @@
           </div>
 
           <div class="row-span-4">
-            <label class="text-xl text-cyan-400 block mb-1 font-medium">Upload Photo</label>
+            <label class="text-xl text-cyan-400 block mb-1 font-medium shadow-2xl shadow-black">Upload Photo</label>
             <input type="file" name="photo" id="photo"
               class="text-violet-500" required>
-            <img id="display_photo" class="h-80 w-72 p-1 m-2 border-double border-4 border-indigo-500"></img>
+            <img id="display_photo" class="h-72 w-64 p-1 m-2 border-double border-4 border-indigo-500 shadow-2xl shadow-black"></img>
             <script src="../js/showImg.js"></script>
           </div>
 
           <div class="row-span-4" >
-            <label class="text-xl text-cyan-400 block mb-1 font-medium">Upload Police File</label>
+            <label class="text-xl text-cyan-400 block mb-1 font-medium shadow-2xl shadow-black">Upload Police File</label>
             <input type="file" name="file" id="file"
             class="text-violet-500" required>
-            <img id="display_file" class="h-80 w-72 p-1 m-2 border-double border-4 border-indigo-500"></img>
+            <img id="display_file" class="h-72 w-64 p-1 m-2 border-double border-4 border-indigo-500 shadow-2xl shadow-black"></img>
             <script src="../js/showImg.js"></script>
           </div>
 
@@ -76,7 +76,7 @@
           <div>
             <label class="text-xl text-cyan-400 block mb-1 font-medium">Sex</label>
             <select name="sex" 
-              class="bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-rose-600 focus:bg-gray-900 focus:ring-2 focus:ring-pink-600 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out w-1/2">
+              class="bg-gray-800 bg-opacity-90 rounded border border-gray-700 focus:border-rose-600 focus:bg-gray-900 focus:ring-2 focus:ring-pink-600 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out w-1/2 shadow-2xl shadow-black">
                 <option>Male</option>
                 <option>Female</option>
                 <option>Others</option>
@@ -93,7 +93,7 @@
           <div>
             <label class="text-xl text-cyan-400 block mb-1 font-medium">Identity type</label>
             <select name="identity_type"
-              class="bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-rose-600 focus:bg-gray-900 focus:ring-2 focus:ring-pink-600 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out w-1/2" >
+              class="bg-gray-800 bg-opacity-90 rounded border border-gray-700 focus:border-rose-600 focus:bg-gray-900 focus:ring-2 focus:ring-pink-600 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out w-1/2 shadow-2xl shadow-black">
               <option>Aadhar Card</option>
               <option>Voter Card</option>
               <option>Ration Card</option>
@@ -167,10 +167,10 @@
 
         <div class="mt-8">
           <input type="submit" name="submit" value="Add Prisoner"
-            class="m-2 py-2 px-4 bg-blue-500 text-white hover:bg-blue-600 active:bg-blue-700 disabled:opacity-50 rounded-lg cursor-pointer">
+            class="m-2 py-2 px-4 bg-blue-500 text-white hover:bg-blue-600 active:bg-blue-700 disabled:opacity-50 rounded-lg cursor-pointer shadow-xl shadow-black">
           <input type="reset" value="Reset"
-            class="m-2 py-2 px-4 bg-pink-500 text-white rounded hover:bg-pink-600 active:bg-pink-700 disabled:opacity-50 cursor-pointer">
-          <a href="work.php" class="m-2 cursor-pointer text-white bg-gradient-to-r from-green-400 to-blue-400 border-0 py-2 px-8 focus:outline-none hover:from-pink-500 hover:to-yellow-500  rounded-full text-lg ...">Back</a>
+            class="m-2 py-2 px-4 bg-pink-500 text-white rounded hover:bg-pink-600 active:bg-pink-700 disabled:opacity-50 cursor-pointer shadow-xl shadow-black">
+          <a href="work.php" class="m-2 cursor-pointer text-white bg-gradient-to-r from-green-400 to-blue-400 border-0 py-2 px-8 focus:outline-none hover:from-pink-500 hover:to-yellow-500  rounded-full text-lg shadow-xl shadow-black">Back</a>
         </div>
       </form>
       <!-- Hl4  SVG   -->

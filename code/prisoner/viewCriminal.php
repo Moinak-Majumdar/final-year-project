@@ -54,7 +54,7 @@ if(isset($_GET['id']) && isset($_SESSION['prisoner_id']) )
 <section>
     <div class="lg:px-40 px-4">
         <div id="pdf">
-            <h1 class="font-medium text-5xl text-purple-600 border-double border-b-2 border-purple-400 w-fit">Prisoner Information</h1>
+            <h1 class="font-bold text-5xl text-purple-600 border-double border-b-2 border-purple-400 w-fit">Prisoner Information</h1>
             <div class="mt-8 grid xl:gird-cols-3 lg:grid-cols-3 sm:grid-cols-1 grid-cols-1 gap-y-0.5 gap-x-0.5">
                 <div>
                     <h1 class="text-xl text-indigo-700 block mb-1 font-bold">Name :
@@ -72,9 +72,9 @@ if(isset($_GET['id']) && isset($_SESSION['prisoner_id']) )
 
                 <div class="row-span-4">
                     <h1 class="text-xl text-indigo-700 block mb-1 font-bold">Photo :</h1>
-                        <img class="h-72 w-64 p-1 border-double border-4 border-gray-900" src="<?php echo $res['photo'];?>"></img>
-                    </div>
-            </h1>
+                        <img class="h-72 w-64 p-1 border-double border-4 border-gray-900 shadow-2xl shadow-black" src="<?php echo $res['photo'];?>"></img>
+                    </h1>
+                </div>
 
                 <div>
                     <h1 class="text-xl text-indigo-700 block mb-1 font-bold">Prisoner Id :
@@ -134,7 +134,7 @@ if(isset($_GET['id']) && isset($_SESSION['prisoner_id']) )
 
                 <div class="row-span-4">
                     <h1 class="text-xl text-indigo-700 block mb-1 font-bold">Case File :</h1>
-                        <img class="h-72 w-64 p-1 border-double border-4 border-rose-600" src="<?php echo $res['file'];?>"></img>
+                        <img class="h-72 w-64 p-1 border-double border-4 border-rose-600 shadow-2xl shadow-black" src="<?php echo $res['file'];?>"></img>
                     </div>
             </h1>
 
@@ -181,8 +181,8 @@ if(isset($_GET['id']) && isset($_SESSION['prisoner_id']) )
                 </div>
 
                 <div>
-                    <h1 class="text-xl text-red-500 block mb-1 font-bold italic">Case In-charge :
-                        <span class="font-medium text-2xl text-red-500  italic">
+                    <h1 class="text-xl text-pink-600 block mb-1 font-extrabold italic">Case In-charge :
+                        <span class="font-medium text-2xl italic text-black">
                             <?php echo $res['in_charge']?></span>
                     </h1>
                 </div>
@@ -190,8 +190,8 @@ if(isset($_GET['id']) && isset($_SESSION['prisoner_id']) )
             </div>
         </div>
         <div class="space-x-4 mt-10">
-          <button onclick="generatePDF()" class="py-2 px-4 bg-blue-500 text-white rounded-lg hover:bg-blue-600 active:bg-blue-700 disabled:opacity-50">Print Information</button>
-          <a href="work.php" class="text-white bg-gradient-to-r from-green-400 to-blue-400 border-0 py-2 px-8 focus:outline-none hover:from-pink-500 hover:to-yellow-500 text-lg rounded-full ...">Back</a>
+          <button onclick="generatePDF()" class="py-2 px-4 bg-blue-500 text-white rounded-lg hover:bg-blue-600 active:bg-blue-700 shadow-xl shadow-black">Print Information</button>
+          <a href="work.php" class="text-white bg-gradient-to-r from-green-400 to-blue-400 border-0 py-2 px-8 focus:outline-none hover:from-pink-500 hover:to-yellow-500 text-lg rounded-full shadow-xl shadow-black">Back</a>
         </div>
         <!-- Hl4  SVG   -->
         <div class = "fixed -bottom-32 left-0 -z-10 opacity-80">

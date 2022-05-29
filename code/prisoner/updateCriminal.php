@@ -17,7 +17,7 @@
         $q1=mysqli_query($connection,$select);
         $res=mysqli_fetch_assoc($q1);
     }
-    $class='bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-rose-600 focus:bg-gray-900 focus:ring-2 focus:ring-pink-600 text-base outline-none text-rose-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out w-full';
+    $class='bg-gray-800 bg-opacity-90 rounded border border-gray-700 focus:border-rose-600 focus:bg-gray-900 focus:ring-2 focus:ring-pink-600 text-base outline-none text-rose-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out w-full shadow-xl shadow-black';
 ?>
 
 <!DOCTYPE html>
@@ -34,11 +34,11 @@
 </head>
 <body class="bg-slate-800">
     <div class="mt-10 lg:px-40 px-4">
-      <h1 class="font-medium text-5xl text-pink-600">Modify Prisoner Information</h1>
+      <h1 class="font-extrabold text-5xl text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-lime-400 to-green-400">Modify Prisoner Information</h1>
       <form action="<?php echo htmlentities($_SERVER['PHP_SELF']);?>" method="post" enctype="multipart/form-data" autocomplete="off">
         <div class="mt-8 grid lg:grid-cols-5 gap-8 px-auto mx-auto">
             <div>
-              <label class="text-xl text-sky-500 block mb-1 font-large">Name</label>
+              <label class="text-xl text-sky-500 block mb-1 font-bold">Name</label>
               <input type="text" name="name" 
                 value="<?php echo $res['name'];?>"
                 class="<?php echo $class ?>"
@@ -46,36 +46,36 @@
             </div>
 
             <div>
-              <label class="text-xl text-sky-500 block mb-1 font-large">Prisoner Id :</label>
+              <label class="text-xl text-sky-500 block mb-1 font-bold">Prisoner Id :</label>
               <h1 class="font-medium text-2xl text-fuchsia-600">
                 <?php echo $_SESSION['prisoner_id']; ?></h1>
             </div>
             
             <div>
-              <label class="text-xl text-sky-500 block mb-1 font-large">Penal Code :</label>
+              <label class="text-xl text-sky-500 block mb-1 font-bold">Penal Code :</label>
               <h1 class="font-medium text-2xl text-fuchsia-600">
                 <?php echo $res['penal_code'];?></h1>
             </div>
 
             <div class="row-span-4">
-              <label class="text-xl text-sky-500 block mb-1 font-large">Photo :</label>
-              <img src="<?php echo $res['photo']?>" id="display_photo" class="h-72 w-64 p-1 m-2 border-double border-4 border-pink-600"></img>
+              <label class="text-xl text-sky-500 block mb-1 font-bold">Photo :</label>
+              <img src="<?php echo $res['photo']?>" id="display_photo" class="h-72 w-64 p-1 m-2 border-double border-4 border-blue-600 shadow-xl shadow-black"></img>
             </div>
 
             <div class="row-span-4" >
-              <label class="text-xl text-sky-500 block mb-1 font-large">Police File :</label>
-              <img src="<?php echo $res['file']?>" id="display_file" class="h-72 w-64 p-1 m-2 border-double border-4 border-pink-600"></img>
+              <label class="text-xl text-sky-500 block mb-1 font-bold">Police File :</label>
+              <img src="<?php echo $res['file']?>" id="display_file" class="h-72 w-64 p-1 m-2 border-double border-4 border-blue-600 shadow-xl shadow-black"></img>
             </div>
 
             <div>
-              <label class="text-xl text-sky-500 block mb-1 font-large">Date Of Birth</label>
+              <label class="text-xl text-sky-500 block mb-1 font-bold">Date Of Birth</label>
               <input type="date" name="dob"  
                 value="<?php echo $res['dob'];?>"
                 class="<?php echo $class ?>" required/>
             </div>
 
             <div>
-              <label class="text-xl text-sky-500 block mb-1 font-large">Sex</label>
+              <label class="text-xl text-sky-500 block mb-1 font-bold">Sex</label>
               <input type="text" name="sex" 
                 value="<?php echo $res['sex'];?>"
                 class="<?php echo $class ?>"
@@ -83,7 +83,7 @@
             </div>
 
             <div>
-              <label class="text-xl text-sky-500 block mb-1 font-large">Medical Record</label>
+              <label class="text-xl text-sky-500 block mb-1 font-bold">Medical Record</label>
               <input type="text" name="medical" 
                 value="<?php echo $res['medical'];?>"
                 class="<?php echo $class ?>"
@@ -91,7 +91,7 @@
             </div>
 
             <div>
-              <label class="text-xl text-sky-500 block mb-1 font-large">Identity type</label>
+              <label class="text-xl text-sky-500 block mb-1 font-bold">Identity type</label>
               <input type="text" name="identity_type" 
                 value="<?php echo $res['identity_type'];?>"
                 class="<?php echo $class ?>"
@@ -99,7 +99,7 @@
             </div>
 
             <div>
-              <label class="text-xl text-sky-500 block mb-1 font-large">Identity Number</label>
+              <label class="text-xl text-sky-500 block mb-1 font-bold">Identity Number</label>
               <input type="text" name="identity_no" 
                 value="<?php echo $res['identity_no'];?> " 
                 class="<?php echo $class ?>"
@@ -107,7 +107,7 @@
             </div>
 
             <div>
-              <label class="text-xl text-sky-500 block mb-1 font-large">Previous Crime Record</label>
+              <label class="text-xl text-sky-500 block mb-1 font-bold">Previous Crime Record</label>
               <input type="text" name="previous_crime" 
                 value="<?php echo $res['previous_crime'];?>"
                 class="<?php echo $class ?>"
@@ -115,15 +115,15 @@
             </div>
 
             <div>
-              <label class="text-xl text-sky-500 block mb-1 font-large">Guardian</label>
+              <label class="text-xl text-sky-500 block mb-1 font-bold">Guardian</label>
               <input type="text" name="g_name" 
                 value="<?php echo $res['g_name'];?>" 
                 class="<?php echo $class ?>"
-                placeholder="Guardina Name (with relation) *" required/>
+                placeholder="Guardian Name (with relation) *" required/>
             </div>
 
             <div>
-              <label class="text-xl text-sky-500 block mb-1 font-large">Phone Number</label>
+              <label class="text-xl text-sky-500 block mb-1 font-bold">Phone Number</label>
               <input type="tel" name="phone_no" 
                 value="<?php echo $res['phone_no'];?>"
                 class="<?php echo $class ?>"
@@ -131,7 +131,7 @@
             </div>
 
             <div>
-              <label class="text-xl text-sky-500 block mb-1 font-large">Address</label>
+              <label class="text-xl text-sky-500 block mb-1 font-bold">Address</label>
               <input type="text" name="address" 
                 value="<?php echo $res['address'];?>"
                 class="<?php echo $class ?>"
@@ -139,7 +139,7 @@
             </div>
 
             <div>
-              <label class="text-xl text-sky-500 block mb-1 font-large">Crime(s) committed</label>
+              <label class="text-xl text-sky-500 block mb-1 font-bold">Crime(s) committed</label>
               <input type="text" name="crime" 
                 value="<?php echo $res['crime'];?>"
                 class="<?php echo $class ?>"
@@ -147,7 +147,7 @@
             </div>
 
             <div>
-              <label class="text-xl text-sky-500 block mb-1 font-large">Case</label>
+              <label class="text-xl text-sky-500 block mb-1 font-bold">Case</label>
               <input type="text" name="case_status" 
                 value="<?php echo $res['case_status'];?>"
                 class="<?php echo $class ?>"
@@ -155,7 +155,7 @@
             </div>
 
             <div>
-              <label class="text-xl text-sky-500 block mb-1 font-large">Punishment</label>
+              <label class="text-xl text-sky-500 block mb-1 font-bold">Punishment</label>
               <input type="text" name="punishment" 
                 value="<?php echo $res['punishment'];?>"
                 class="<?php echo $class ?>"
@@ -163,21 +163,21 @@
             </div>
 
             <div>
-              <label class="text-xl text-sky-500 block mb-1 font-large">Date of Arrest</label>
+              <label class="text-xl text-sky-500 block mb-1 font-bold">Date of Arrest</label>
               <input type="date" name="arrest_date" 
                 value="<?php echo $res['arrest_date'];?>"
                 class="<?php echo $class ?>" required/>
             </div>
 
             <div>
-              <label class="text-xl text-pink-600 block mb-1 font-large bold italic">Case In-charge :</label>
-              <h1 class="font-medium text-2xl text-zinc-100  bold">
+              <label class="text-xl text-pink-600 block mb-1 font-extrabold italic">Case In-charge :</label>
+              <h1 class="font-medium text-2xl text-zinc-100">
               <?php echo "-> ". $res['in_charge']?></h1>
             </div>
 
             <div>
-              <label class="text-xl text-pink-600 block mb-1 font-large bold italic">New In-charge :</label>
-              <h1 class="font-medium text-2xl text-zinc-100  bold">
+              <label class="text-xl text-pink-600 block mb-1 font-extrabold italic">New In-charge :</label>
+              <h1 class="font-bold text-2xl text-zinc-900">
               <?php echo "-> ".$_SESSION['in_charge']?></h1>
             </div>
 
@@ -185,8 +185,8 @@
 
           <div class="space-x-4 mt-8">
             <input type="submit" name="submit" value="Update Prisoner"
-              class="py-2 px-4 bg-blue-500 text-white rounded-lg cursor-pointer hover:bg-blue-600 active:bg-blue-700 disabled:opacity-50">
-            <a href="work.php" class="text-white bg-gradient-to-r from-green-400 to-blue-400 border-0 py-2 px-8 focus:outline-none hover:from-pink-500 hover:to-yellow-500  rounded-full text-lg cursor-pointer ...">Back</a>
+              class="py-2 px-4 bg-blue-500 text-white rounded-lg cursor-pointer hover:bg-blue-600 active:bg-blue-700 shadow-xl shadow-black">
+            <a href="work.php" class="text-white bg-gradient-to-r from-green-400 to-blue-400 border-0 py-2 px-8 focus:outline-none hover:from-pink-500 hover:to-yellow-500  rounded-full text-lg cursor-pointer shadow-xl shadow-black">Back</a>
           </div>
         </div>
       </form>

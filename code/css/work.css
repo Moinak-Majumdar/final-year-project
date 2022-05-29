@@ -10,10 +10,15 @@
     font-family: 'Poppins', sans-serif;
     margin: 4px;
 }
-input
-{
-    height:45px;
-    width:500px
+input {
+    width:30rem;
+    height:50px;
+}
+@media only screen and (max-width:640px) {
+    input {
+        width:22rem;
+        height:50px;
+    }
 }
 /* -------------- */
 /*  Button design */
@@ -146,7 +151,7 @@ input
     padding: 5px 15px;
     display:inline-block;
     background: #fff;
-    margin: 20px;
+    margin: 10px;
 }
 .d5 a:before,.d5 a:after
 {
@@ -205,4 +210,39 @@ input
     height: 100%;
     background: rgba(255,255,255,0.075);
     transform: skew(25deg);
+}
+
+@media only screen and (max-width:640px) {
+    .d5 a,.d6 a
+    {
+        position: relative;
+        width: 22rem;
+        height: 80px;
+        padding: 5px 15px;
+        display:inline-block;
+        background: #fff;
+        margin: 0px;
+    }
+    .d5 a span, .d6 a span
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        font-family: 'Poppins', sans-serif;
+        display: inline-block;
+        background: #111827;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1em;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 2px;
+        color: white;
+        border:1px solid #040a29;
+        overflow: hidden;
+    }
 }

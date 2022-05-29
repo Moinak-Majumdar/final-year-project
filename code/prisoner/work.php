@@ -210,7 +210,7 @@
                 </a>
             </div>
             <!--view all non existing prisoner-->
-            <div class="d6 flex justify-center" >
+            <div class="d6 flex justify-center">
                 <a href="all_non_existing.php" target="">
                     <span>View All Removed Prisoners</span>
                 </a>
