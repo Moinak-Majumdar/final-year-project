@@ -38,7 +38,7 @@
             </thead>
             <tbody class="text-slate-900">
                     <?php
-                        include "db_con.php";
+                        include "../db/db_con.php";
                         $select="select * from non_existing_prisoner";
                         $q1=mysqli_query($connection,$select);
                         $no=mysqli_num_rows($q1);

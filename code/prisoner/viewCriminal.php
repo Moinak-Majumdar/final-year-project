@@ -1,5 +1,5 @@
 <?php
-include "db_con.php";
+include "../db/db_con.php";
 session_start();
 if(isset($_GET['id']))
 {

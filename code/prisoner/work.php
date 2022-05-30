@@ -43,7 +43,7 @@
                     <button class="button b1" type="submit" name="submit1">Add</button>
                 </form>              
                 <?php
-                        include "db_con.php";
+                        include "../db/db_con.php";
                         if(isset($_POST['submit1']))
                         {
                             $prisoner_id=mysqli_real_escape_string($connection,$_POST["prisoner_id1"]);
@@ -107,7 +107,7 @@
                         <button class="button b2" type="submit" name="submit2">Update</button>
                     </form>
                     <?php
-                    include "db_con.php";
+                    include "../db/db_con.php";
                     if(isset($_POST['submit2']))
                     {
                         $prisoner_id2=mysqli_real_escape_string($connection,$_POST['prisoner_id2']);
@@ -142,7 +142,7 @@
                         <button class="button b3" type="submit" name="submit3">View</button>
                     </form>
                     <?php
-                    include "db_con.php";
+                    include "../db/db_con.php";
                     if(isset($_POST['submit3']))
                     {
                         $prisoner_id3=mysqli_real_escape_string($connection,$_POST['prisoner_id3']);
@@ -176,7 +176,7 @@
                         <button class="button b4" type="submit" name="submit4">Remove</button>
                     </form>
                     <?php
-                    include "db_con.php";
+                    include "../db/db_con.php";
                     if(isset($_POST['submit4']))
                     {
                         $prisoner_id4=mysqli_real_escape_string($connection,$_POST['prisoner_id4']);

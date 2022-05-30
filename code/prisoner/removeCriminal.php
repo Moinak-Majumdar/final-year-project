@@ -162,7 +162,7 @@
 <!-- --------------------- -->
 
 <?php
-include "db_con.php";
+include "../db/db_con.php";
 if(isset($_POST['submit']))
 {
     $lastrow="SELECT serial_no FROM non_existing_prisoner ORDER BY serial_no DESC LIMIT 1";

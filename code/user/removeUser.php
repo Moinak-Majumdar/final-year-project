@@ -1,6 +1,4 @@
-<?php
-    include "db_con.php";
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,7 +45,7 @@
 
                     <div class="col-row-2">
                         <label class="text-xl text-sky-600 block mb-1 font-large">Reason</label>
-                        <textarea  name="resone"
+                        <textarea  name="reason"
                             class="w-full bg-gray-400 bg-opacity-10 rounded border border-gray-700 focus:border-rose-600 focus:bg-transparent focus:ring-2 focus:ring-rose-400 h-32 text-base outline-none text-stone-900 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out shadow-2xl shadow-black"
                             placeholder="Proper valid reason *"></textarea>
                     </div>
@@ -93,13 +91,13 @@
 <?php
 if(isset($_POST['submit']))
 {
-    include "db_con.php";
+    include "../db/db_con.php";
     $id=mysqli_real_escape_string($connection,$_POST['id']);
     $password=mysqli_real_escape_string($connection,$_POST['password']);
     $name=mysqli_real_escape_string($connection,$_POST['name']);
-    $resone=mysqli_real_escape_string($connection,$_POST['resone']);
-    $selectquery="select * from user where user_ID='$id'";
-    $query1=mysqli_query($connection,$selectquery);
+    $reason=mysqli_real_escape_string($connection,$_POST['reason']);
+    $selectQuery="select * from user where user_ID='$id'";
+    $query1=mysqli_query($connection,$selectQuery);
     $res=mysqli_fetch_assoc($query1);
     if($res['name']==$name)
     {
@@ -117,7 +115,7 @@ if(isset($_POST['submit']))
             $d4=$res['post'];
             $d5=$res['ph_no'];
             $d6=$res['email'];
-            $insert="INSERT INTO `non_active_user`(`serial_no`, `user_ID`, `name`, `post`, `phone Number`, `email`, `resone`) VALUES ('$d1','$d2','$d3','$d4','$d5','$d6','$resone')";
+            $insert="INSERT INTO `non_active_user`(`serial_no`, `user_ID`, `name`, `post`, `phone Number`, `email`, `reason`) VALUES ('$d1','$d2','$d3','$d4','$d5','$d6','$reason')";
             $q2=mysqli_query($connection,$insert);
             
             if($q2)

@@ -112,7 +112,7 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST")
 {   
-    include "db_con.php";
+    include "../db/db_con.php";
     if(isset($_POST['submit']))
     {
         $name=mysqli_real_escape_string($connection,$_POST['name']);

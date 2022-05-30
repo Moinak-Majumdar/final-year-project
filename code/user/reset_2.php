@@ -1,5 +1,5 @@
 <?php
-include "db_con.php";
+include "../db/db_con.php";
  if(isset($_GET['link']))
  {
     $link=$_GET['link'];

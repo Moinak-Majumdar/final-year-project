@@ -1,7 +1,7 @@
 <?php
 if(isset($_GET['id']))
 {
-    include "db_con.php";
+    include "../db/db_con.php";
     $id=$_GET['id'];
     $select="SELECT * FROM `non_existing_prisoner` WHERE `prisoner_id`='$id'";
     $query=mysqli_query($connection,$select);

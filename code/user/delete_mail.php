@@ -1,7 +1,7 @@
 <?php   
     if(isset($_GET['id']))
     {
-        include "db_con.php";
+        include "../db/db_con.php";
         $id=$_GET['id'];
         $delete="DELETE FROM `mail` WHERE `user_ID`='$id'";
         $query=mysqli_query($connection,$delete);
