@@ -74,7 +74,12 @@
                                     $val=$res['penal_code'] + 2;
                                     $_SESSION['prisoner_id']=$prisoner_id;
                                     $_SESSION['penal_code']=$val;
-                                    header("location:addCriminal.php");
+                                    //header("location:addCriminal.php");
+                                    ?>
+                                        <script>
+                                            window.location.href="addCriminal.php"
+                                        </script>
+                                    <?php
                                 }
                                 if($id_count1>0)
                                 {
@@ -119,7 +124,12 @@
                         if($id_count3==1)
                         {
                             $_SESSION['prisoner_id']=$prisoner_id2;
-                            header("location:updateCriminal.php");
+                            //header("location:updateCriminal.php");
+                            ?>
+                                <script>
+                                    window.location.href='updateCriminal.php';
+                                </script>
+                            <?php
                             $_SESSION['in_charge']=$_SESSION['name'];
                         }
                         else
@@ -127,7 +137,7 @@
                             ?>
                             <script>
                                 alert("Invalid Prisoner Id.");
-                                </script>
+                            </script>
                             <?php  
                         }
                     }
@@ -154,7 +164,12 @@
                         if($id_count4==1)
                         {
                             $_SESSION['prisoner_id']=$prisoner_id3;
-                            header("location:viewCriminal.php");
+                            //header("location:viewCriminal.php");
+                            ?>
+                                <script>
+                                    window.location.href='viewCriminal.php?id=<?php echo $prisoner_id3;?>'
+                                </script>
+                            <?php
                         }
                         else
                         {

@@ -1,21 +1,6 @@
 <?php
 include "../db/db_con.php";
-session_start();
 if(isset($_GET['id']))
-{
-    $id=$_GET['id'];
-    $select="select * from prisoner where prisoner_id='$id'";
-    $query=mysqli_query($connection,$select);
-    $res=mysqli_fetch_assoc($query);
-}
-if(isset($_SESSION['prisoner_id']))
-{
-    $id=$_SESSION['prisoner_id'];
-    $select="select * from prisoner where prisoner_id='$id'";
-    $query=mysqli_query($connection,$select);
-    $res=mysqli_fetch_assoc($query);
-}
-if(isset($_GET['id']) && isset($_SESSION['prisoner_id']) )
 {
     $id=$_GET['id'];
     $select="select * from prisoner where prisoner_id='$id'";
