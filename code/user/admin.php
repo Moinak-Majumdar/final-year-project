@@ -40,7 +40,7 @@ session_start();
                     <button type="submit" name="submit" 
                         class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
                         Login</button>
-                    <a href='../index.php' class='mt-4 text-center text-gray-500'>go back : <span class='text-indigo-400 hover:underline'>Home</span></a>
+                    <a href='../index.php' class='mt-4 text-center text-gray-500 capitalize'>go back : <span class='text-indigo-400 hover:underline'>Home</span></a>
                 </div>
             </div>
         </form>

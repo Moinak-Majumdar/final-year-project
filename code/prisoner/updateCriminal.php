@@ -1,6 +1,6 @@
 <?php
   session_start();
-  include "db_con.php";
+  include "../db/db_con.php";
   if(!isset($_SESSION['prisoner_id']))
     {
         ?>

@@ -87,7 +87,7 @@
             <label class="text-xl text-cyan-400 block mb-1 font-medium">Medical Record</label>
             <input type="text" name="medical" 
               class="<?php echo $class ?>"
-              placeholder="Health status *"  required/>
+              placeholder="Health Status *"  required/>
           </div>
 
           <div>
@@ -109,10 +109,10 @@
           </div>
 
           <div>
-            <label class="text-xl text-cyan-400 block mb-1 font-medium">Crime(s) committed</label>
+            <label class="text-xl text-cyan-400 block mb-1 font-medium">Crime(s) Committed</label>
             <input type="text" name="crime" 
               class="<?php echo $class ?>"
-              placeholder="Committed crime(s) *" required/>
+              placeholder="Committed Crime(s) *" required/>
           </div>
 
           <div>

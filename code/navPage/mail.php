@@ -65,7 +65,7 @@
                             <p class="leading-relaxed">11:00 AM to 05:00 PM<br>Email-myoffice_bkp@gov.in<br> Ph-7044963879</p>
                         </div>
                     </div>
-                    <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
+                    <!-- <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
                         <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
                             <span class="font-semibold title-font text-sky-400">Balurghat Branch</span>
                         </div>
@@ -73,7 +73,7 @@
                             <h2 class="text-2xl font-medium text-blue-400 title-font mb-2">Chakvrigu, Balurghat, Dakshin Dinajpur, 733102</h2>
                             <p class="leading-relaxed">12:00 PM to 04:00 PM<br>Email-myoffice_blgt@gov.in<br> Ph-8101226132</p>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
                         <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
                             <span class="font-semibold title-font text-sky-400">Palta Branch</span>

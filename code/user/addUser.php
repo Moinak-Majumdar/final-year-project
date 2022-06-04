@@ -56,7 +56,7 @@
                         <input type="password" name="password" id="password"
                             class="w-full focus:bg-transparent rounded-lg border border-indigo-400 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500 bg-gray-400 bg-opacity-10 text-base outline-none text-gray-800 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out shadow-2xl shadow-black"
                             placeholder="Enter User Password *" required/>
-                        <div class="inline-flex">
+                        <div class="inline-flex justify-center">
                             <input type="checkbox" onclick="showPassword2()" id="ckbox"
                                 class="mx-4 ml-8 mt-4 cursor-pointer">
                             <h2 onclick="showPassword3()"
@@ -185,7 +185,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
                     {
                         ?>
                         <script>
-                            alert("Password atlest 5 to 10 character long.");
+                            alert("Password at least 5 to 10 character long.");
                         </script>
                         <?php   
                         
@@ -194,7 +194,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
                     {   
                         ?>
                         <script>
-                            alert("password should contain atleast one number and one special character.");
+                            alert("password should contain at least one number and one special character.");
                         </script>
                         <?php   
                 

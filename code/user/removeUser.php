@@ -105,7 +105,7 @@ if(isset($_POST['submit']))
         $dec_pass=password_verify($password,$dbpass);
 
         if($dec_pass)
-        { //transfar
+        { //hl3 transfar
             $lastrow="SELECT serial_no FROM non_active_user ORDER BY serial_no DESC LIMIT 1";
             $qs=mysqli_query($connection,$lastrow);
             $lastno=mysqli_fetch_assoc($qs);
