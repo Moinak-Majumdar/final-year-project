@@ -6,9 +6,9 @@
         ?>
         <script>
             alert("error");
+            window.location.href='work.php'
         </script>
         <?php
-        header("location:work.php");
     }
     else
     {

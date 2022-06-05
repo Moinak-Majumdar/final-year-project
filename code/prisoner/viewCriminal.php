@@ -6,6 +6,13 @@ if(isset($_GET['id']))
     $select="select * from prisoner where prisoner_id='$id'";
     $query=mysqli_query($connection,$select);
     $res=mysqli_fetch_assoc($query);
+} else { 
+    ?>
+    <script>
+        alert("error");
+        window.location.href='work.php';
+    </script>
+    <?php
 }
 ?>
 <!DOCTYPE html>

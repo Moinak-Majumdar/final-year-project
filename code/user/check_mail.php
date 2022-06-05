@@ -1,3 +1,15 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['admin']))
+    {
+        ?>
+        <script>
+            alert("You are logged out. Please login again");
+            window.location.href="admin.php";
+        </script>
+        <?php
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

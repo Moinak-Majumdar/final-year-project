@@ -5,9 +5,10 @@
         ?>
         <script>
             alert("error");
+            window.location.href='work.php'
         </script>
         <?php
-        header("location:work.php");
+        
     }
   $class = 'bg-gray-800 bg-opacity-90 rounded border border-gray-700 focus:border-rose-600 focus:bg-gray-900 focus:ring-2 focus:ring-pink-600 text-base outline-none text-rose-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out w-full shadow-2xl shadow-black';
 ?>
@@ -223,8 +224,8 @@
       $in_charge=$_SESSION['name'];
       if($file_error == 0 && $photo_error == 0)
       {
-          $photo_dest = '../../data/photo/'.$photo_name;
-          $file_dest = '../../data/file/'.$file_name;
+          $photo_dest = '../data/photo/'.$photo_name;
+          $file_dest = '../data/file/'.$file_name;
 
           move_uploaded_file($photo_path,$photo_dest);
           move_uploaded_file($file_path,$file_dest);

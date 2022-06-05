@@ -5,7 +5,7 @@
         ?>
         <script>
             alert("You are logged out. Please login again");
-            location.replace("admin.php")
+            window.location.href="admin.php";
         </script>
         <?php
     }

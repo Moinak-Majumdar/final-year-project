@@ -12,7 +12,7 @@ else
     ?>
     <script>
         alert("Oops! something went wrong !!")
-        location.replace("work.php");
+        window.location.href='work.php'
     </script>
     <?php
 }

@@ -75,11 +75,10 @@ session_start();
             $get="select * from user where serial_no='1'";
             $query1=mysqli_query($connection,$get);
             $res=mysqli_fetch_array($query1);
-            $_SESSION['admin']='admin';
-
+            
             if($res[2]==$id && $res[6]==$password)
             {
-                
+                $_SESSION['admin']='admin';
                 ?>
                 <script>
                     location.replace("admin_work.php");

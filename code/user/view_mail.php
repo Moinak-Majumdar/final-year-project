@@ -6,6 +6,13 @@ if(isset($_GET['id']))
     $select="SELECT * FROM `mail` WHERE `user_ID`='$id'";
     $query=mysqli_query($connection,$select);
     $res=mysqli_fetch_assoc($query);
+} else {
+    ?>
+    <script>
+        alert("You are logged out. Please login again");
+        window.location.href="admin.php";
+    </script>
+    <?php
 }
 ?>
 <!DOCTYPE html>

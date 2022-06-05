@@ -1,5 +1,3 @@
-<?php session_start();
-?>
 <html>
     <head>
         <title>Contact</title>
@@ -116,89 +114,86 @@
 <!--HL3                       -->
 
 <?php
-    if($_SERVER["REQUEST_METHOD"] == "POST")
+    include "../db/db_con.php";
+    if(isset($_POST['submit']))
     {
-        
-        if(isset($_POST['submit']))
+        $user_ID=mysqli_real_escape_string($connection,$_POST['user_ID']);
+        $mail=mysqli_real_escape_string($connection,$_POST['email']);
+        $massage=mysqli_real_escape_string($connection,$_POST['massage']);
+
+
+        $userQuery="select * from user where user_ID='$user_ID'";
+        $query1=mysqli_query($connection,$userQuery);
+        $userCount=mysqli_num_rows($query1);
+
+        $last_row="SELECT serial_no FROM mail ORDER BY serial_no DESC LIMIT 1";
+        $query4=mysqli_query($connection,$last_row);
+        $res=mysqli_fetch_assoc($query4);
+        $next=$res['serial_no']+1;
+
+        // echo($next.' '.$mail.' '.$massage.' '.$db_name.' '.$mail.' '.$db_mail)
+
+        if($userCount)
         {
-            $user_ID=mysqli_real_escape_string($connection,$_POST['user_ID']);
-            $mail=mysqli_real_escape_string($connection,$_POST['email']);
-            $massage=mysqli_real_escape_string($connection,$_POST['massage']);
+            $res=mysqli_fetch_assoc($query1);
+            $db_name=$res['name'];
+            $db_mail=$res['email'];
 
+            $idQuery="SELECT * FROM `mail` WHERE `user_ID`='$user_ID'";
+            $query3=mysqli_query($connection,$idQuery);
+            $idCount=mysqli_num_rows($query3);
 
-            $userquery="select * from user where user_ID='$user_ID'";
-            $query1=mysqli_query($connection,$userquery);
-            $userCount=mysqli_num_rows($query1);
-
-            $last_row="SELECT serial_no FROM mail ORDER BY serial_no DESC LIMIT 1";
-            $query4=mysqli_query($connection,$last_row);
-            $res=mysqli_fetch_assoc($query4);
-            $next=$res['serial_no']+1;
-
-            // echo($next.' '.$mail.' '.$massage.' '.$db_name.' '.$mail.' '.$db_mail)
-
-            if($userCount)
+            if($idCount < 0)
             {
-                $res=mysqli_fetch_assoc($query1);
-                $db_name=$res['name'];
-                $db_mail=$res['email'];
-
-                $idquery="SELECT * FROM `mail` WHERE `user_ID`='$user_ID'";
-                $query3=mysqli_query($connection,$idquery);
-                $idcount=mysqli_num_rows($query3);
-
-                if(!$idcount)
+                if($db_mail == $mail)
                 {
-                    if($db_mail == $mail)
+                    $insertQuery = "INSERT INTO `mail` (`serial_no`, `user_ID`, `name`, `email`, `massage`) VALUE('$next','$user_ID','$db_name','$db_mail','$massage')";
+                    $query2 = mysqli_query($connection,$insertQuery);
+                    if($query2)
                     {
-                        $insertquery = "INSERT INTO `mail` (`serial_no`, `user_ID`, `name`, `email`, `massage`) VALUE('$next','$user_ID','$db_name','$db_mail','$massage')";
-                        $query2 = mysqli_query($connection,$insertquery);
-                        if($query2)
-                        {
-                            ?>
-                                <script>
-                                        alert("Massage sent.");
-                                        location.replace("../index.php");
-                                </script>
-                            <?php
-                        }
-                        else
-                        {
-                            ?>
-                                <script>
-                                    alert("OPPS! something went wrong ☠️");
-                                </script>
-                            <?php
-                        }
+                        ?>
+                            <script>
+                                alert("Massage sent.");
+                                location.replace("../index.php");
+                            </script>
+                        <?php
                     }
                     else
                     {
                         ?>
                             <script>
-                                alert("OPPS! invalid email id ⚔️");
+                                alert("OPPS! something went wrong ☠️");
                             </script>
                         <?php
                     }
                 }
-                else 
+                else
                 {
                     ?>
                         <script>
-                            alert("you can send only one message at ones. 😃");
+                            alert("OPPS! invalid email id ⚔️");
                         </script>
                     <?php
                 }
-               
             }
-            else
+            else 
             {
                 ?>
                     <script>
-                        alert("OPPS! invalid USER ID  ⚔️");
+                        alert("you can send only one message at ones. 😃");
                     </script>
                 <?php
-
             }
+           
+        }
+        else
+        {
+            ?>
+                <script>
+                    alert("OPPS! invalid USER ID  ⚔️");
+                </script>
+            <?php
+
         }
     }
 ?>

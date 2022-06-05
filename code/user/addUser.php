@@ -1,3 +1,15 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['admin']))
+    {
+        ?>
+        <script>
+            alert("You are logged out. Please login again");
+            window.location.href="admin.php";
+        </script>
+        <?php
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -108,7 +120,6 @@
 <!--Hl3      php           -->
 <!-- --------------------- -->
 
-
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST")
 {   
@@ -217,7 +228,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
                         {
                             ?>
                             <script>
-                                alert("OOPS! something went wrong");</script>
+                                alert("OOPS! something went wrong");
+                            </script>
                             <?php   
                         }
                     }
