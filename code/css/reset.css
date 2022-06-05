@@ -19,7 +19,7 @@ body
     justify-content: center;
     align-items: center;
     height: auto;
-    width: auto;
+    width: fit-content;
     overflow: hidden;
     border-radius: 20px;
     margin: 10vh auto;
@@ -41,7 +41,7 @@ body
     );
     filter:blur(20px);
     z-index: -1;
-    animation: spin 1.5s infinite linear;
+    animation: spin 15s infinite linear;
 }
 @keyframes spin{
     100%{
@@ -52,7 +52,6 @@ body
 {
     content: '';
     position: absolute;
-    background-color: linear-gradient(#0f0c29,#302b63,#24243e);
     inset: 5px;
     border-radius: 18px;
     z-index: -1;

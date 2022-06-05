@@ -79,7 +79,7 @@
               class="bg-gray-800 bg-opacity-90 rounded border border-gray-700 focus:border-rose-600 focus:bg-gray-900 focus:ring-2 focus:ring-pink-600 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out w-1/2 shadow-2xl shadow-black">
                 <option>Male</option>
                 <option>Female</option>
-                <option>Others</option>
+                <option>Other</option>
             </select>
           </div>
 
@@ -116,7 +116,7 @@
           </div>
 
           <div>
-            <label class="text-xl text-cyan-400 block mb-1 font-medium">Previous Crime Record</label>
+            <label class="text-xl text-cyan-400 block mb-1 font-medium">Crime Record(s)</label>
             <input type="text" name="previous_crime" 
               class="<?php echo $class ?>"
               placeholder="Previous Crime Record (if any)" />

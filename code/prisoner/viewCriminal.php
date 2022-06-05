@@ -138,7 +138,7 @@ if(isset($_GET['id']))
                 </div>
 
                 <div>
-                    <h1 class="text-xl text-indigo-700 block mb-1 font-bold">Previous Crime Record :
+                    <h1 class="text-xl text-indigo-700 block mb-1 font-bold">Previous Crime(s):
                         <span class="font-medium text-2xl text-slate-800">
                             <?php echo $res['previous_crime']?></span>
                     </h1>

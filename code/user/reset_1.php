@@ -10,7 +10,7 @@
     <link rel ="stylesheet" href="../css/reset.css">
 </head>
 <body class="bg-slate-600 px-4">
-    <section class="reset shadow-2xl shadow-black">
+    <section class="reset shadow-2xl shadow-black after:bg-slate-800">
         <form action="<?php echo htmlentities($_SERVER['PHP_SELF']);?>" method="post" autocomplete="off">
             <div class="mx-8 mt-8">
                 <p class="text-2xl text-pink-600">An activation link will be send within 30 s to</p>

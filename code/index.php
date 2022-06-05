@@ -9,6 +9,7 @@
         <script src="js/show_pass.js"></script>
         <link rel="stylesheet" href="css/prealoader.css">
         <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/hide.css">
     </head>
     <body>
         <!--        loading            -->

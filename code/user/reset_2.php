@@ -8,7 +8,7 @@ include "../db/db_con.php";
     $res=mysqli_fetch_assoc($query1);
     $id=$res['user_ID'];
     $name=$res['name'];
-    setcookie('current',$id,time()+600);
+    //setcookie('current',$id,time()+600);
  }
 ?>
 <!DOCTYPE html>
@@ -25,7 +25,7 @@ include "../db/db_con.php";
     <link rel="stylesheet" href="../css/hide.css">
 </head>
 <body class="bg-slate-600 px-4">
-    <section class="reset">
+    <section class="reset shadow-2xl shadow-black after:bg-slate-800">
         <form action="<?php echo htmlentities($_SERVER['PHP_SELF']);?>" method="POST" autocomplete="off">
             <div class="mx-8 mt-10">
                     <p class="text-3xl text-pink-600">Set New Password.</p>

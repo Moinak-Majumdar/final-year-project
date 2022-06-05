@@ -38,7 +38,7 @@
       <form action="<?php echo htmlentities($_SERVER['PHP_SELF']);?>" method="post" enctype="multipart/form-data" autocomplete="off">
         <div class="mt-8 grid lg:grid-cols-5 gap-8 px-auto mx-auto">
             <div>
-              <label class="text-xl text-sky-500 block mb-1 font-bold">Name</label>
+              <label class="text-xl text-cyan-400 block mb-1">Name</label>
               <input type="text" name="name" 
                 value="<?php echo $res['name'];?>"
                 class="<?php echo $class ?>"
@@ -46,36 +46,36 @@
             </div>
 
             <div>
-              <label class="text-xl text-sky-500 block mb-1 font-bold">Prisoner Id :</label>
+              <label class="text-xl text-cyan-400 block mb-1">Prisoner Id :</label>
               <h1 class="font-medium text-2xl text-fuchsia-600">
                 <?php echo $_SESSION['prisoner_id']; ?></h1>
             </div>
             
             <div>
-              <label class="text-xl text-sky-500 block mb-1 font-bold">Penal Code :</label>
+              <label class="text-xl text-cyan-400 block mb-1">Penal Code :</label>
               <h1 class="font-medium text-2xl text-fuchsia-600">
                 <?php echo $res['penal_code'];?></h1>
             </div>
 
             <div class="row-span-4">
-              <label class="text-xl text-sky-500 block mb-1 font-bold">Photo :</label>
+              <label class="text-xl text-cyan-400 block mb-1">Photo :</label>
               <img src="<?php echo $res['photo']?>" id="display_photo" class="h-72 w-64 p-1 m-2 border-double border-4 border-blue-600 shadow-xl shadow-black"></img>
             </div>
 
             <div class="row-span-4" >
-              <label class="text-xl text-sky-500 block mb-1 font-bold">Police File :</label>
+              <label class="text-xl text-cyan-400 block mb-1">Police File :</label>
               <img src="<?php echo $res['file']?>" id="display_file" class="h-72 w-64 p-1 m-2 border-double border-4 border-blue-600 shadow-xl shadow-black"></img>
             </div>
 
             <div>
-              <label class="text-xl text-sky-500 block mb-1 font-bold">Date Of Birth</label>
+              <label class="text-xl text-cyan-400 block mb-1">Date Of Birth</label>
               <input type="date" name="dob"  
                 value="<?php echo $res['dob'];?>"
                 class="<?php echo $class ?>" required/>
             </div>
 
             <div>
-              <label class="text-xl text-sky-500 block mb-1 font-bold">Sex</label>
+              <label class="text-xl text-cyan-400 block mb-1">Sex</label>
               <input type="text" name="sex" 
                 value="<?php echo $res['sex'];?>"
                 class="<?php echo $class ?>"
@@ -83,7 +83,7 @@
             </div>
 
             <div>
-              <label class="text-xl text-sky-500 block mb-1 font-bold">Medical Record</label>
+              <label class="text-xl text-cyan-400 block mb-1">Medical Record</label>
               <input type="text" name="medical" 
                 value="<?php echo $res['medical'];?>"
                 class="<?php echo $class ?>"
@@ -91,7 +91,7 @@
             </div>
 
             <div>
-              <label class="text-xl text-sky-500 block mb-1 font-bold">Identity type</label>
+              <label class="text-xl text-cyan-400 block mb-1">Identity type</label>
               <input type="text" name="identity_type" 
                 value="<?php echo $res['identity_type'];?>"
                 class="<?php echo $class ?>"
@@ -99,7 +99,7 @@
             </div>
 
             <div>
-              <label class="text-xl text-sky-500 block mb-1 font-bold">Identity Number</label>
+              <label class="text-xl text-cyan-400 block mb-1">Identity Number</label>
               <input type="text" name="identity_no" 
                 value="<?php echo $res['identity_no'];?> " 
                 class="<?php echo $class ?>"
@@ -107,7 +107,7 @@
             </div>
 
             <div>
-              <label class="text-xl text-sky-500 block mb-1 font-bold">Previous Crime Record</label>
+              <label class="text-xl text-cyan-400 block mb-1">Crime Record(s)</label>
               <input type="text" name="previous_crime" 
                 value="<?php echo $res['previous_crime'];?>"
                 class="<?php echo $class ?>"
@@ -115,7 +115,7 @@
             </div>
 
             <div>
-              <label class="text-xl text-sky-500 block mb-1 font-bold">Guardian</label>
+              <label class="text-xl text-cyan-400 block mb-1">Guardian</label>
               <input type="text" name="g_name" 
                 value="<?php echo $res['g_name'];?>" 
                 class="<?php echo $class ?>"
@@ -123,7 +123,7 @@
             </div>
 
             <div>
-              <label class="text-xl text-sky-500 block mb-1 font-bold">Phone Number</label>
+              <label class="text-xl text-cyan-400 block mb-1">Phone Number</label>
               <input type="tel" name="phone_no" 
                 value="<?php echo $res['phone_no'];?>"
                 class="<?php echo $class ?>"
@@ -131,7 +131,7 @@
             </div>
 
             <div>
-              <label class="text-xl text-sky-500 block mb-1 font-bold">Address</label>
+              <label class="text-xl text-cyan-400 block mb-1">Address</label>
               <input type="text" name="address" 
                 value="<?php echo $res['address'];?>"
                 class="<?php echo $class ?>"
@@ -139,7 +139,7 @@
             </div>
 
             <div>
-              <label class="text-xl text-sky-500 block mb-1 font-bold">Crime(s) committed</label>
+              <label class="text-xl text-cyan-400 block mb-1">Crime(s) committed</label>
               <input type="text" name="crime" 
                 value="<?php echo $res['crime'];?>"
                 class="<?php echo $class ?>"
@@ -147,7 +147,7 @@
             </div>
 
             <div>
-              <label class="text-xl text-sky-500 block mb-1 font-bold">Case</label>
+              <label class="text-xl text-cyan-400 block mb-1">Case</label>
               <input type="text" name="case_status" 
                 value="<?php echo $res['case_status'];?>"
                 class="<?php echo $class ?>"
@@ -155,7 +155,7 @@
             </div>
 
             <div>
-              <label class="text-xl text-sky-500 block mb-1 font-bold">Punishment</label>
+              <label class="text-xl text-cyan-400 block mb-1">Punishment</label>
               <input type="text" name="punishment" 
                 value="<?php echo $res['punishment'];?>"
                 class="<?php echo $class ?>"
@@ -163,7 +163,7 @@
             </div>
 
             <div>
-              <label class="text-xl text-sky-500 block mb-1 font-bold">Date of Arrest</label>
+              <label class="text-xl text-cyan-400 block mb-1">Date of Arrest</label>
               <input type="date" name="arrest_date" 
                 value="<?php echo $res['arrest_date'];?>"
                 class="<?php echo $class ?>" required/>
