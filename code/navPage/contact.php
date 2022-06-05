@@ -143,7 +143,7 @@
             $query3=mysqli_query($connection,$idQuery);
             $idCount=mysqli_num_rows($query3);
 
-            if($idCount < 0)
+            if($idCount < 1)
             {
                 if($db_mail == $mail)
                 {
