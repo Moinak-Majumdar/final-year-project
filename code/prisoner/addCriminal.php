@@ -56,7 +56,7 @@
             <label class="text-xl text-cyan-400 block mb-1 font-medium shadow-2xl shadow-black">Upload Photo</label>
             <input type="file" name="photo" id="photo"
               class="text-violet-500" required>
-            <img id="display_photo" class="h-72 w-64 p-1 m-2 border-double border-4 border-indigo-500 shadow-2xl shadow-black"></img>
+            <img id="display_photo" class="h-72 w-64 p-1 m-2 border-double border-4 border-indigo-500 shadow-2xl shadow-black bg-white bg-opacity-10"/>
             <script src="../js/showImg.js"></script>
           </div>
 
@@ -64,7 +64,7 @@
             <label class="text-xl text-cyan-400 block mb-1 font-medium shadow-2xl shadow-black">Upload Police File</label>
             <input type="file" name="file" id="file"
             class="text-violet-500" required>
-            <img id="display_file" class="h-72 w-64 p-1 m-2 border-double border-4 border-indigo-500 shadow-2xl shadow-black"></img>
+            <img id="display_file" class="h-72 w-64 p-1 m-2 border-double border-4 border-indigo-500 shadow-2xl shadow-black bg-white bg-opacity-10"/>
             <script src="../js/showImg.js"></script>
           </div>
 

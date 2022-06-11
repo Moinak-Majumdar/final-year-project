@@ -10,7 +10,7 @@
         <link rel ="stylesheet" href="../css/hide.css">
         <link rel="stylesheet" href="../css/index.css">
     </head>
-    <body>
+    <body class='min-h-screen flex flex-col'>
         <!--        loading            -->
         <div id="preloader"></div>
         <!--        navbar             -->
@@ -84,8 +84,8 @@
                 </div>
             </div>
         </section>
-        <footer>
-            <p class="w-full fixed bottom-0 text-center text-white">Copyright &copy; Criminal System - All rights reserved</p>
+        <footer class="mt-auto">
+            <p class="w-full text-center text-white bg-black bg-opacity-50">Copyright &copy; Criminal System - All rights reserved</p>
         </footer>
     </body> 
 </html>

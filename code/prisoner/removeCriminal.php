@@ -129,14 +129,14 @@
 
                 <div>
                 <label class="text-xl text-sky-500 block mb-1 font-large">Date of Release</label>
-                <input type="date" name="release_date" 
+                <input type="date" name="release_date" required
                     class="bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-rose-600 focus:bg-gray-900 focus:ring-2 focus:ring-pink-600 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out w-full"/>
                 </div>
 
                 <div class="row-span-2">
                 <label class="text-xl text-sky-500 block mb-1 font-large">Reason : </label>
-                <textarea name="reason" 
-                    class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-rose-600 focus:bg-gray-900 focus:ring-2 focus:ring-rose-400 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" required></textarea>
+                <textarea name="reason" required
+                    class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-rose-600 focus:bg-gray-900 focus:ring-2 focus:ring-rose-400 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
                 </div>   
             </div>
 
