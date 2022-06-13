@@ -120,7 +120,7 @@ if(isset($_POST['submit']))
         {
             ?>
                 <script>
-                    alert("Oops ! something wents wrong....");
+                    alert("Oops ! something went's wrong....");
                     location.replace("../index.php");
                 </script>
             <?php

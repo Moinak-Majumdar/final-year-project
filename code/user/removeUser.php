@@ -1,5 +1,4 @@
 <?php
-    session_start();
     if(!isset($_SESSION['admin']))
     {
         ?>
@@ -19,6 +18,7 @@
     <title>Remove User</title>
     <script src="../js/show_pass.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/hide.css">
 </head>
 <body class="bg-gray-300 h-full w-full flex justify-center items-center">
    <section class="h-auto w-auto flex justify-center items-center flex-col my-8">

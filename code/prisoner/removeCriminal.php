@@ -1,5 +1,4 @@
 <?php
-  session_start();
   include "../db/db_con.php";
   if(!isset($_SESSION['prisoner_id']))
     {
