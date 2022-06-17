@@ -37,13 +37,13 @@
                         </a>
                     </li>
                     <li class="list">
-                        <a href="navPage/mail.php">
-                            <span class="icon"><ion-icon name="mail-unread-sharp"></ion-icon></span>
+                        <a href="navPage/help.php">
+                            <span class="icon"><ion-icon name="extension-puzzle-sharp"></ion-icon></span>
                             <span class="text">Help</span>
                         </a>
                     </li>
                     <li class="list">
-                        <a href="navPage/help.php">
+                        <a href="navPage/team.php">
                             <span class="icon"><ion-icon name="code-slash-sharp"></ion-icon></span>
                             <span class="text">Team</span>
                         </a>

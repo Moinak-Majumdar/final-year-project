@@ -1,8 +1,6 @@
-<?php session_start();
-?>
 <html>
     <head>
-        <title>Devolpoment Team</title>
+        <title>Help</title>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         <script src="js/preloader.js"></script>
@@ -38,13 +36,13 @@
                         </a>
                     </li>
                     <li class="list">
-                        <a href="mail.php">
-                            <span class="icon"><ion-icon name="mail-unread-sharp"></ion-icon></span>
+                        <a href="help.php">
+                            <span class="icon"><ion-icon name="extension-puzzle-sharp"></ion-icon></span>
                             <span class="text">Help</span>
                         </a>
                     </li>
                     <li class="list">
-                        <a href="help.php">
+                        <a href="team.php">
                             <span class="icon"><ion-icon name="code-slash-sharp"></ion-icon></span>
                             <span class="text">Team</span>
                         </a>
@@ -52,66 +50,42 @@
                 </ul>
             </div>
         </div>
-        <section class="body-font">
-            <div class="container px-5 py-24 mx-auto">
-                <div class="flex items-center lg:w-1/2 mx-auto border-b pb-10 mb-10 border-gray-800 sm:flex-row flex-col">
-                    <div class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full text-teal-400 bg-gray-800 flex-shrink-0">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
-                        <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                        <circle cx="12" cy="7" r="4"></circle>
-                        </svg>
+        <section class="text-gray-400 body-font overflow-hidden">
+            <div class="container px-5 py-5 mx-auto my-10">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-20 text-pink-600 text-center">For any further assistance reach us through any of our branches.</h1>
+                <div class="-my-8 divide-y-2">
+                    <div class="py-8 flex flex-wrap md:flex-nowrap">
+                        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <span class="font-semibold title-font text-sky-400">Barrackpore Branch</span>
+                        </div>
+                        <div class="md:flex-grow">
+                            <h2 class="text-2xl font-medium text-blue-400 title-font mb-2">29 Shibtala Road, Nonachandanpukur, Barrackpore, 700122 </h2>
+                            <p class="leading-relaxed">11:00 AM to 05:00 PM<br>Email-myoffice_bkp@gov.in<br> Ph-7044963879</p>
+                        </div>
                     </div>
-                    <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-                        <h2 class="text-teal-400 text-xl title-font font-bold mb-2 tracking-wide">Arkadyuti Das</h2>
-                        <p class="leading-relaxed text-lg text-pink-600">1.Module Analyst.<br>2.Project Manager.<BR/>3.Database Analyst.</p>
-                        <span class="mt-2 w-40 h-auto flex justify-between">
-                            <a href="https://www.facebook.com/Arkadyuti.Das.2017" target="_moinak"><ion-icon name="logo-facebook" class="facebook text-2xl cursor-pointer"></ion-icon></a>
-                            <a href="" target="_moinak"><ion-icon name="logo-instagram" class="instagram text-2xl cursor-pointer"></ion-icon></a>
-                            <a href="" target="_moinak"><ion-icon name="logo-twitter" class="twitter text-2xl cursor-pointer"></ion-icon></a>
-                            <a href="" target="_moinak"><ion-icon name="logo-whatsapp" class="whatsapp text-2xl cursor-pointer"></ion-icon></a>
-                        </span>
+                    <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
+                        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <span class="font-semibold title-font text-sky-400">Balurghat Branch</span>
+                        </div>
+                        <div class="md:flex-grow">
+                            <h2 class="text-2xl font-medium text-blue-400 title-font mb-2">Chakvrigu, Balurghat, Dakshin Dinajpur, 733102</h2>
+                            <p class="leading-relaxed">12:00 PM to 04:00 PM<br>Email-myoffice_blgt@gov.in<br> Ph-8101226132</p>
+                        </div>
                     </div>
-                </div>
-                <div class="flex items-center lg:w-1/2 mx-auto border-b pb-10 mb-10 border-gray-800 sm:flex-row flex-col">
-                    <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-                        <h2 class="text-teal-400 text-xl title-font font-bold mb-2 tracking-wide">Moinak Majumdar</h2>
-                        <p class="leading-relaxed text-lg text-gray-300">1.Ui Designer.<br>2.Lead Programmer.<br>3.Technical Analyst.</p>
-                        <span class="mt-2 w-40 h-auto flex justify-between">
-                            <a href="https://www.facebook.com/debabrata.adhikari.7906" target="_moinak"><ion-icon name="logo-facebook" class="facebook text-2xl cursor-pointer"></ion-icon></a>
-                            <a href="" target="_moinak"><ion-icon name="logo-instagram" class="instagram text-2xl cursor-pointer"></ion-icon></a>
-                            <a href="" target="_moinak"><ion-icon name="logo-twitter" class="twitter text-2xl cursor-pointer"></ion-icon></a>
-                            <a href="" target="_moinak"><ion-icon name="logo-whatsapp" class="whatsapp text-2xl cursor-pointer"></ion-icon></a>
-                        </span>
-                    </div>
-                    <div class="sm:w-32 order-first sm:order-none sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full text-blue-500 bg-gray-800 flex-shrink-0">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
-                        <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                        <circle cx="12" cy="7" r="4"></circle>
-                        </svg>
+                    <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
+                        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                            <span class="font-semibold title-font text-sky-400">Palta Branch</span>
+                        </div>
+                        <div class="md:flex-grow">
+                            <h2 class="text-2xl font-medium text-blue-400 title-font mb-2">Santinagar Palta, Bengal Enamel, 743122</h2>
+                            <p class="leading-relaxed">11:00 AM to 05:00 PM<br>Email-myoffice_ptf@gov.in<br> Ph-9804139678</p>
+                        </div>
                     </div>
                 </div>
-                <!-- <div class="flex items-center lg:w-1/2 mx-auto sm:flex-row flex-col">
-                    <div class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full text-pink-500 bg-gray-800 flex-shrink-0">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
-                            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                            <circle cx="12" cy="7" r="4"></circle>
-                        </svg>
-                    </div>
-                    <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-                        <h2 class="text-teal-400 text-xl title-font font-bold mb-2 tracking-wide">Moinak Majumdar</h2>
-                        <p class="leading-relaxed text-lg text-sky-400">1.Lead Programmer.<br>2.Technical Analyst.</p>
-                        <span class="mt-2 w-40 h-auto flex justify-between">
-                            <a href="https://www.facebook.com/moinak.majumdar.9" target="_moinak"><ion-icon name="logo-facebook" class="facebook text-2xl cursor-pointer"></ion-icon></a>
-                            <a href="" target="_moinak"><ion-icon name="logo-instagram" class="instagram text-2xl cursor-pointer"></ion-icon></a>
-                            <a href="" target="_moinak"><ion-icon name="logo-twitter" class="twitter text-2xl cursor-pointer"></ion-icon></a>
-                            <a href="" target="_moinak"><ion-icon name="logo-whatsapp" class="whatsapp text-2xl cursor-pointer"></ion-icon></a>
-                        </span>
-                    </div>
-                </div>
-            </div> -->
+            </div>
         </section>
         <footer class="mt-auto">
-            <h2 class="w-full text-center text-white bg-black bg-opacity-50">Copyright &copy; Criminal System - All rights reserved</h2>
+            <p class="w-full text-center text-white bg-black bg-opacity-50">Copyright &copy; Criminal System - All rights reserved</p>
         </footer>
     </body> 
 </html>
@@ -122,3 +96,5 @@
 <!-- --------------------- -->
 
 
+
+                   

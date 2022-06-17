@@ -38,13 +38,13 @@
                         </a>
                     </li>
                     <li class="list">
-                        <a href="mail.php">
-                            <span class="icon"><ion-icon name="mail-unread-sharp"></ion-icon></span>
+                        <a href="help.php">
+                            <span class="icon"><ion-icon name="extension-puzzle-sharp"></ion-icon></span>
                             <span class="text">Help</span>
                         </a>
                     </li>
                     <li class="list">
-                        <a href="help.php">
+                        <a href="team.php">
                             <span class="icon"><ion-icon name="code-slash-sharp"></ion-icon></span>
                             <span class="text">Team</span>
                         </a>

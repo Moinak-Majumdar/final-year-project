@@ -36,13 +36,13 @@
                         </a>
                     </li>
                     <li class="list">
-                        <a href="mail.php">
-                            <span class="icon"><ion-icon name="mail-unread-sharp"></ion-icon></span>
+                        <a href="help.php">
+                            <span class="icon"><ion-icon name="extension-puzzle-sharp"></ion-icon></span>
                             <span class="text">Help</span>
                         </a>
                     </li>
                     <li class="list">
-                        <a href="help.php">
+                        <a href="team.php">
                             <span class="icon"><ion-icon name="code-slash-sharp"></ion-icon></span>
                             <span class="text">Team</span>
                         </a>
@@ -87,15 +87,16 @@
                             </button>
                         </div>
                         <div class="p-2 w-full pt-8 mt-8 border-t border-gray-800 text-center">
-                            <a class="text-indigo-400">moinak2000@gmail.com</a>
+                            <a class="text-indigo-400 text-lg font-bold">@Moinak Majumdar</a>
                             <p class="text-zinc-400 my-5">301,Satinagar Palta
                                 <br>North 24 Pgs, West Bengal.
                             </p>
                             <span class="mt-2 w-40 h-auto inline-flex justify-between">
                                 <a href="https://www.facebook.com/moinak.majumdar.9" target="_moinak"><ion-icon name="logo-facebook" class="facebook text-2xl cursor-pointer"></ion-icon></a>
-                                <a href="#" target="_moinak"><ion-icon name="logo-instagram" class="instagram text-2xl cursor-pointer"></ion-icon></a>
-                                <a href="#" target="_moinak"><ion-icon name="logo-twitter" class="twitter text-2xl cursor-pointer"></ion-icon></a>
-                                <a href="#" target="_moinak"><ion-icon name="logo-whatsapp" class="whatsapp text-2xl cursor-pointer"></ion-icon></a>
+                                <a href="tel:9804139678" target="_moinak"><ion-icon name="call" class="instagram text-2xl cursor-pointer"></ion-icon></a>
+                                <a href="https://twitter.com/messages/compose?recipient_id=moinak005&ref_src=twsrc%5Etfw&text=Hi" target="_moinak"><ion-icon name="logo-twitter" class="twitter text-2xl cursor-pointer"></ion-icon></a>
+                                <a href="https://api.whatsapp.com/send?phone=+919804139678&text=Hi" target="_moinak"><ion-icon name="logo-whatsapp" class="whatsapp text-2xl cursor-pointer"></ion-icon></a>
+                                <a href="mailto:moinak2000@gmail.com" target="_moinak"><ion-icon name="mail-outline" class="gmail text-2xl cursor-pointer"></ion-icon></a>
                             </span>
                         </div>
                     </div>
