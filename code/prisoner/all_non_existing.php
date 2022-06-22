@@ -1,3 +1,15 @@
+<?php 
+    session_start();
+    if(!isset($_SESSION['name']))
+    {
+        ?>
+        <script>
+            alert("You are logged out. Please login again");
+            location.replace("../index.php")
+        </script>
+        <?php
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
