@@ -24,6 +24,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Criminal Record Management System" />
+    <meta name="author" content="Moinak Majumdar"/>
+    <meta name='keywords' content = 'crime, prisoner, punishment'/>
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/../icon/logo32.png"/>
+    <link rel="icon" type="image/png" sizes="36x36" href="%PUBLIC_URL%/../icon/logo36.png"/>
+    <link rel="icon" type="image/png" sizes="48x48" href="%PUBLIC_URL%/../icon/logo48.png"/>
+    <link rel="icon" type="image/png" sizes="72x72" href="%PUBLIC_URL%/../icon/logo72.png"/>
+    <link rel="icon" type="image/png" sizes="96x96" href="%PUBLIC_URL%/../icon/logo96.png"/>
+    <link rel="icon" type="image/png" sizes="128x128" href="%PUBLIC_URL%/../icon/logo128.png"/>
+    <link rel="icon" type="image/png" sizes="144x144" href="%PUBLIC_URL%/../icon/logo144.png"/>
+    <link rel="icon" type="image/png" sizes="152x152" href="%PUBLIC_URL%/../icon/logo152.png"/>
+    <link rel="icon" type="image/png" sizes="152x152" href="%PUBLIC_URL%/../icon/logo152.png"/>
+    <link rel="icon" type="image/png" sizes="192x192" href="%PUBLIC_URL%/../icon/logo192.png"/>
+    <link rel="icon" type="image/png" sizes="384x384" href="%PUBLIC_URL%/../icon/logo384.png"/>
+    <link rel="icon" type="image/png" sizes="512x512" href="%PUBLIC_URL%/../icon/logo512.png"/>
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/../icon/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/../manifest.json" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../css/hide.css">
     <title>Remove Prisoner</title>
