@@ -1,7 +1,12 @@
 <?php
 include "../db/db_con.php";
- if(isset($_GET['link']))
- {
+    if(!isset($_GET['link'])) {
+        ?>
+            <script>
+                location.replace('http://criminal-dev.rf.gd/user/reset_1.php')
+            </script>
+        <?php
+    } else {
     $link=$_GET['link'];
     $select="SELECT * FROM user WHERE token='$link'";
     $query1=mysqli_query($connection,$select);

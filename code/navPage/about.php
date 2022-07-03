@@ -90,7 +90,7 @@
                     <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap">
                         <div class="md:flex-grow">
                             <h2 class="text-2xl font-medium text-blue-400 title-font mb-2 underline">Disclaimer</h2>
-                            <p class="leading-relaxed">This Website is designed & developed for project purpose only and not for actual use.<br><br>
+                            <p class="leading-relaxed">This Website is designed & developed for project purpose only and may need some other improvements for actual use.<br><br>
                             The contents of this website are for information purposes only, enabling the users to have a quick and an easy access to information. We are taking every effort to provide accurate and updated information. However, it is likely that the details such as telephone numbers, medical records of a criminal, etc may change prior to their updating in the web site. Hence, we do not assume any legal liability on the completeness, accuracy or usefulness of the contents provided in this web site.<br><br>
                             The links are provided to other external sites in some documents. We are not responsible for the accuracy of the contents in those sites. The hyperlinks given to external sites do not constitute an endorsement of information, products or services offered by these sites.
                             </p>    
