@@ -28,8 +28,7 @@
     <meta name="description" content="Criminal Record Management System" />
     <meta name="author" content="Moinak Majumdar"/>
     <meta name='keywords' content = 'crime, prisoner, punishment'/>
-    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/../icon/logo32.png"/>
-    <link rel="manifest" href="%PUBLIC_URL%/../manifest.json" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../icon/logo32.png"/>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../css/hide.css">
     <title>Remove Prisoner</title>

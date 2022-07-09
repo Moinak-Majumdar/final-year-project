@@ -26,7 +26,6 @@ if(isset($_GET['id']))
     <meta name="author" content="Moinak Majumdar"/>
     <meta name='keywords' content = 'crime, prisoner, punishment'/>
     <link rel="icon" type="image/png" sizes="32x32" href="../icon/logo32.png"/>
-    <link rel="manifest" href="../manifest.json" />
     <title>Prisoner <?php echo "$id"; ?></title>
     <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>

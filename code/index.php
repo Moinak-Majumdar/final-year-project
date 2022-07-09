@@ -9,19 +9,14 @@
         <meta name="author" content="Moinak Majumdar"/>
         <meta name='keywords' content = 'crime, prisoner, punishment'/>
         <link rel="icon" type="image/png" sizes="32x32" href="icon/logo32.png"/>
-        <link  rel="manifest" crossorigin="use-credentials" href="%PUBLIC_URL%/manifest.json"/>
         <title>Login page</title>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-        <script src="js/preloader.js"></script>
-        <script src="js/show_pass.js"></script>
-        <link rel="stylesheet" href="css/prealoader.css">
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+        <script src="js/show_pass.js"></script> 
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="css/hide.css">
     </head>
     <body>
-        <!--        loading            -->
-        <div id="preloader"></div>
         <!--Hl4        navbar             -->
         <section class="container_navigation"> 
             <div class="navigation">
