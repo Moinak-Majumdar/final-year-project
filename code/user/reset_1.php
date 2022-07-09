@@ -19,8 +19,8 @@
     <section class="reset shadow-2xl shadow-black after:bg-slate-800">
         <form action="<?php echo htmlentities($_SERVER['PHP_SELF']);?>" method="post" autocomplete="off">
             <div class="mx-8 mt-8">
-                <p class="text-2xl text-pink-600">An activation link will be send within 30 s to</p>
-                <p class="text-2xl text-pink-600">your registerd email.</p> 
+                <p class="text-2xl text-pink-600">A password reset link will be send within 30 s to</p>
+                <p class="text-2xl text-pink-600">your registered email.</p> 
                 <p class="text-2xl text-pink-600">To save changes visit your email.</p>
             </div>
             <div class="inline-grid lg:grid-cols-1 gap-4 p-8 mx-auto w-full">

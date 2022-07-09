@@ -1,3 +1,13 @@
+<?php 
+if(!isset($_GET['token'])) {
+    ?>
+     <script>
+        alert("no token found");
+        location.replace('http://localhost/final-year-project/code/user/reset_1.php');
+    </script>
+    <?php
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -125,6 +135,7 @@ if(isset($_POST['submit'])) {
         ?>
             <script>
                 alert("no token found");
+                location.replace('http://localhost/final-year-project/code/user/reset_1.php');
             </script>
         <?php 
     }
