@@ -80,7 +80,7 @@
             $bits=bin2hex(random_bytes(10));
             if($dbemail==$email)
             {//valid
-                $link="http://criminal-dev.rf.gd/user/reset_2.php?link=$token";
+                $link="http://localhost/final-year-project/code/user/reset_2.php?token=$token";
                 $to_email = "$dbemail";
                 $subject = "Reset Password.";
                 $body = "Hello ".$res['post']." ".$res['name']." click this link to reset your password => ".$link;

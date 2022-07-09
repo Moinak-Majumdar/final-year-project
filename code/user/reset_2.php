@@ -1,21 +1,3 @@
-<?php
-include "../db/db_con.php";
-    if(!isset($_GET['link'])) {
-        ?>
-            <script>
-                location.replace('http://criminal-dev.rf.gd/user/reset_1.php')
-            </script>
-        <?php
-    } else {
-    $link=$_GET['link'];
-    $select="SELECT * FROM user WHERE token='$link'";
-    $query1=mysqli_query($connection,$select);
-    $res=mysqli_fetch_assoc($query1);
-    $id=$res['user_ID'];
-    $name=$res['name'];
-    //setcookie('current',$id,time()+600);
- }
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,22 +19,12 @@ include "../db/db_con.php";
 </head>
 <body class="bg-slate-600 px-4">
     <section class="reset shadow-2xl shadow-black after:bg-slate-800">
-        <form action="<?php echo htmlentities($_SERVER['PHP_SELF']);?>" method="POST" autocomplete="off">
+        <form method="POST" autocomplete="off">
             <div class="mx-8 mt-10">
                     <p class="text-3xl text-pink-600">Set New Password.</p>
             </div>
 
             <div class="inline-grid lg:grid-cols-1 gap-4 p-8 mx-auto w-full">
-
-                <div>
-                    <label class="text-xl text-sky-500 block mb-1 font-large">User ID :<span class="text-indigo-500">
-                        <?php echo " $id";?></span></label>
-                </div>
-
-                <div>
-                    <label class="text-xl text-sky-500 block mb-1 font-large">User Name :<span class="text-indigo-500">
-                        <?php echo " $name";?></span></label>
-                </div>
 
                 <div>
                     <label class="text-xl text-sky-500 block mb-1 font-large">New Password</label>
@@ -96,6 +68,7 @@ include "../db/db_con.php";
             ?>
         </div>
     </section>
+   
 </body>
 </html>
 
@@ -105,47 +78,56 @@ include "../db/db_con.php";
 <!-- --------------------- -->
 
 <?php
-if(isset($_POST['submit']))
-{
-    $password=mysqli_real_escape_string($connection,$_POST['password']);
-    $confirm_password=mysqli_real_escape_string($connection,$_POST['confirm_password']);
-    $id=$_COOKIE['current'];
-    if($password === $confirm_password)
-    {
-        $encrip_pass=password_hash($password,PASSWORD_BCRYPT);
+include '../db/db_con.php';
+if(isset($_POST['submit'])) {
 
-        $update="update user set password='$encrip_pass' where user_ID='$id'";
-        $query2=mysqli_query($connection,$update);
+    if(isset($_GET['token'])) {
+        $token=$_GET['token'];
 
-        if($query2)
-        {
-            setcookie('current',NULL,time()-600);
-            ?>
-                <script>
-                    alert("Password has been updated successfully.");
-                    location.replace("../index.php");
-                </script>
-            <?php
+        $password=mysqli_real_escape_string($connection,$_POST['password']);
+        $confirm_password=mysqli_real_escape_string($connection,$_POST['confirm_password']);
+    
+        if($password === $confirm_password) {
+            
+            $enc_pass=password_hash($password,PASSWORD_BCRYPT);
+
+            $update="UPDATE `user` SET `password`='$enc_pass' WHERE `token`='$token'";   
+            $query2=mysqli_query($connection,$update);
+
+            if($query2)
+            {
+                ?>
+                    <script>
+                        alert("Password has been updated successfully.");
+                        location.replace("../index.php");
+                    </script>
+                <?php
+            }
+            else
+            {
+                ?>
+                    <script>
+                        alert("Oops ! something went's wrong....");
+                        //location.replace("../index.php");
+                    </script>
+                <?php
+            }
         }
         else
         {
             ?>
                 <script>
-                    alert("Oops ! something went's wrong....");
-                    location.replace("../index.php");
+                    alert("Password mismatch");
                 </script>
-            <?php
+            <?php   
         }
-    }
-    else
-    {
+    } else {
         ?>
             <script>
-                alert("Password mismatch");
+                alert("no token found");
             </script>
-        <?php   
+        <?php 
     }
-    
 }
 ?>
     
