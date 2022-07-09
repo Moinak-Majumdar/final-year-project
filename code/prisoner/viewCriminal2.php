@@ -28,25 +28,13 @@ else
     <meta name="author" content="Moinak Majumdar"/>
     <meta name='keywords' content = 'crime, prisoner, punishment'/>
     <link rel="icon" type="image/png" sizes="32x32" href="../icon/logo32.png"/>
-    <link rel="icon" type="image/png" sizes="36x36" href="../icon/logo36.png"/>
-    <link rel="icon" type="image/png" sizes="48x48" href="../icon/logo48.png"/>
-    <link rel="icon" type="image/png" sizes="72x72" href="../icon/logo72.png"/>
-    <link rel="icon" type="image/png" sizes="96x96" href="../icon/logo96.png"/>
-    <link rel="icon" type="image/png" sizes="128x128" href="../icon/logo128.png"/>
-    <link rel="icon" type="image/png" sizes="144x144" href="../icon/logo144.png"/>
-    <link rel="icon" type="image/png" sizes="152x152" href="../icon/logo152.png"/>
-    <link rel="icon" type="image/png" sizes="152x152" href="../icon/logo152.png"/>
-    <link rel="icon" type="image/png" sizes="192x192" href="../icon/logo192.png"/>
-    <link rel="icon" type="image/png" sizes="384x384" href="../icon/logo384.png"/>
-    <link rel="icon" type="image/png" sizes="512x512" href="../icon/logo512.png"/>
-    <link rel="apple-touch-icon" href="../icon/logo192.png" />
     <link rel="manifest" href="../manifest.json" />
     <title>Prisoner <?php echo "$id"; ?></title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel ="stylesheet" href="../css/hide.css">
 </head>
-<body class="bg-zinc-200">
-    <div class="py-10 px-40">
+<body class="bg-zinc-200 flex">
+    <div class="py-10 mx-auto px-2">
         <h1 class="font-medium text-5xl text-purple-600 border-double border-b-2 border-purple-400">Prisoner Information</h1>
         <div class="mt-8 grid lg:grid-cols-3 gap-y-0.5 gap-x-0.5">
                 <div>
@@ -168,7 +156,7 @@ else
                 <a href="all_non_existing.php" class="text-white bg-gradient-to-r from-green-400 to-blue-400 border-0 py-2 px-8 focus:outline-none hover:from-pink-500 hover:to-yellow-500  rounded-full text-lg shadow-xl shadow-black">Back</a>
         </div>
         <div class = "fixed -bottom-10 left-0 -z-10 opacity-80">
-         <?php 
+        <?php 
                 include '../svg/svg.php';
                 echo $svg4 
         ?>

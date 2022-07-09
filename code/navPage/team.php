@@ -8,18 +8,6 @@
         <meta name="author" content="Moinak Majumdar"/>
         <meta name='keywords' content = 'crime, prisoner, punishment'/>
         <link rel="icon" type="image/png" sizes="32x32" href="../icon/logo32.png"/>
-        <link rel="icon" type="image/png" sizes="36x36" href="../icon/logo36.png"/>
-        <link rel="icon" type="image/png" sizes="48x48" href="../icon/logo48.png"/>
-        <link rel="icon" type="image/png" sizes="72x72" href="../icon/logo72.png"/>
-        <link rel="icon" type="image/png" sizes="96x96" href="../icon/logo96.png"/>
-        <link rel="icon" type="image/png" sizes="128x128" href="../icon/logo128.png"/>
-        <link rel="icon" type="image/png" sizes="144x144" href="../icon/logo144.png"/>
-        <link rel="icon" type="image/png" sizes="152x152" href="../icon/logo152.png"/>
-        <link rel="icon" type="image/png" sizes="152x152" href="../icon/logo152.png"/>
-        <link rel="icon" type="image/png" sizes="192x192" href="../icon/logo192.png"/>
-        <link rel="icon" type="image/png" sizes="384x384" href="../icon/logo384.png"/>
-        <link rel="icon" type="image/png" sizes="512x512" href="../icon/logo512.png"/>
-        <link rel="apple-touch-icon" href="../icon/logo192.png" />
         <link rel="manifest" href="../manifest.json" />
         <title>Devolpoment Team</title>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

@@ -21,18 +21,6 @@
     <meta name="author" content="Moinak Majumdar"/>
     <meta name='keywords' content = 'crime, prisoner, punishment'/>
     <link rel="icon" type="image/png" sizes="32x32" href="../icon/logo32.png"/>
-    <link rel="icon" type="image/png" sizes="36x36" href="../icon/logo36.png"/>
-    <link rel="icon" type="image/png" sizes="48x48" href="../icon/logo48.png"/>
-    <link rel="icon" type="image/png" sizes="72x72" href="../icon/logo72.png"/>
-    <link rel="icon" type="image/png" sizes="96x96" href="../icon/logo96.png"/>
-    <link rel="icon" type="image/png" sizes="128x128" href="../icon/logo128.png"/>
-    <link rel="icon" type="image/png" sizes="144x144" href="../icon/logo144.png"/>
-    <link rel="icon" type="image/png" sizes="152x152" href="../icon/logo152.png"/>
-    <link rel="icon" type="image/png" sizes="152x152" href="../icon/logo152.png"/>
-    <link rel="icon" type="image/png" sizes="192x192" href="../icon/logo192.png"/>
-    <link rel="icon" type="image/png" sizes="384x384" href="../icon/logo384.png"/>
-    <link rel="icon" type="image/png" sizes="512x512" href="../icon/logo512.png"/>
-    <link rel="apple-touch-icon" href="../icon/logo192.png" />
     <link rel="manifest" href="../manifest.json" />
     <title>Main Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -40,7 +28,7 @@
     <link rel="stylesheet" href="../css/work.css">
 </head>
 <body class="text-gray-400 bg-gray-800 body-font overflow-x-hidden">
-    <section class='w-full h-auto flex flex-col px-4 md:px-0 justify-center'>
+    <section class='w-full h-auto flex flex-col px-4 md:px-0 justify-center pb-8'>
         <!-- Hl5    heading massage         -->
         <div class="w-fit mx-auto grid lg:grid-cols-1 gap-x-32 mt-8">
             <h1 class="text-center font-semibold text-5xl text-transparent bg-clip-text  bg-gradient-to-r from-indigo-600 via-purple-500 to-pink-600">
