@@ -226,13 +226,13 @@
             <!-- view all existing prisoner  -->
             <div class="d5 flex justify-center">
                 <a href="viewAll.php" target="">
-                    <span>View All Prisoners In Sort</span>
+                    <span>View All Criminals In Sort</span>
                 </a>
             </div>
             <!--view all non existing prisoner-->
             <div class="d6 flex justify-center">
                 <a href="all_non_existing.php" target="">
-                    <span>View All Removed Prisoners</span>
+                    <span>View All Removed Criminals</span>
                 </a>
             </div>
             </div>

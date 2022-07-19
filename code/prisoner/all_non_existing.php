@@ -13,7 +13,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-4">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#000000" />
@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="../css/hide.css">
 </head>
 <body class="bg-slate-300 overflow-x-hidden">
-    <section class='w-full max-h-fit flex flex-col pb-8 md:px-24 px-6'>
+    <section class='w-full max-h-fit flex flex-col pb-4 md:px-24 px-6'>
         <h1 class="my-6 font-semibold text-5xl text-indigo-700 text-center">All Non Existing Prisoners</h1>
         <div class="mt-4 mx-auto">
             <table>
@@ -57,17 +57,17 @@
                                 {
                                     ?>
                                     <tr>
-                                        <td class="px-8 border-slate-900 border-2"> <?php echo $data['prisoner_id'];?></td>
-                                        <td class="px-8 border-slate-900 border-2"> <?php echo $data['name'];?></td>
-                                        <td class="px-8 border-slate-900 border-2"> <?php echo $data['sex'];?></td>
-                                        <td class="px-8 border-slate-900 border-2"> <?php echo $data['identity_type'];?></td>
-                                        <td class="px-8 border-slate-900 border-2"> <?php echo $data['identity_no'];?></td>
-                                        <td class="px-8 border-slate-900 border-2"> <?php echo $data['arrest_date'];?></td>         
-                                        <td class="px-8 border-slate-900 border-2"> <?php echo $data['punishment'];?></td>
-                                        <td class="px-8 border-slate-900 border-2"> <?php echo $data['reason'];?></td>
-                                        <td class="px-8 border-slate-900 border-2"> <?php echo $data['non_existing_from'];?></td>
-                                        <td class="px-8 border-slate-900 border-2"> <?php echo $data['in_charge'];?></td>
-                                        <td class="px-8 border-slate-900 border-2"><a class="text-blue-500 no-underline hover:underline ..." href="viewCriminal2.php?id=<?php echo $data['prisoner_id'];?>">View More</a></td>
+                                        <td class="px-4 border-slate-900 border-2"> <?php echo $data['prisoner_id'];?></td>
+                                        <td class="px-4 border-slate-900 border-2"> <?php echo $data['name'];?></td>
+                                        <td class="px-4 border-slate-900 border-2"> <?php echo $data['sex'];?></td>
+                                        <td class="px-4 border-slate-900 border-2"> <?php echo $data['identity_type'];?></td>
+                                        <td class="px-4 border-slate-900 border-2"> <?php echo $data['identity_no'];?></td>
+                                        <td class="px-4 border-slate-900 border-2"> <?php echo $data['arrest_date'];?></td>         
+                                        <td class="px-4 border-slate-900 border-2"> <?php echo $data['punishment'];?></td>
+                                        <td class="px-4 border-slate-900 border-2"> <?php echo $data['reason'];?></td>
+                                        <td class="px-4 border-slate-900 border-2"> <?php echo $data['non_existing_from'];?></td>
+                                        <td class="px-4 border-slate-900 border-2"> <?php echo $data['in_charge'];?></td>
+                                        <td class="px-4 border-slate-900 border-2"><a class="text-blue-500 no-underline hover:underline ..." href="viewCriminal2.php?id=<?php echo $data['prisoner_id'];?>">View More</a></td>
                                     </tr>
                                     <?php
                                 }
@@ -86,7 +86,7 @@
                 </tbody>
             </table>
         </div>
-        <div class="mx-auto mt-10">
+        <div class="mt-10 mx-auto">
             <a href="work.php" class="text-white bg-gradient-to-r from-green-400 to-blue-400 border-0 py-2 px-8 focus:outline-none hover:from-pink-500 hover:to-yellow-500  rounded-full text-lg shadow-xl shadow-black">Back</a>
         </div>
     </section>

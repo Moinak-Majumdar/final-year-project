@@ -11,8 +11,8 @@
         <link rel="icon" type="image/png" sizes="32x32" href="icon/logo32.png"/>
         <title>Login page</title>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
-        <script src="js/show_pass.js"></script> 
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="js/show_pass.js"></script>
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="css/hide.css">
     </head>

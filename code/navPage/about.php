@@ -10,9 +10,10 @@
         <meta name="author" content="Moinak Majumdar"/>
         <meta name='keywords' content = 'crime, prisoner, punishment'/>
         <link rel="icon" type="image/png" sizes="32x32" href="../icon/logo32.png"/>
-        <title>About</title>
+        <link rel="manifest" href="../manifest.json" /><title>About</title>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="js/preloader.js"></script>
         <script src="js/show_pass.js"></script>
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel ="stylesheet" href="../css/hide.css">
@@ -59,7 +60,7 @@
             </div>
         </div>
         <section class="text-gray-300 body-font overflow-hidden">
-            <div class="container mt-12 mx-auto px-1">
+            <div class="container mt-12 mx-auto px-2 md:px-6">
                 <div class="-my-8 divide-y-2">
                     <div class="py-8 flex flex-wrap md:flex-nowrap">
                         <div class="md:flex-grow">

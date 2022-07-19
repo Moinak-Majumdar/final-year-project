@@ -7,6 +7,7 @@
 body {
   overflow-x: hidden;
   background-image: url(pexels-kindel-media-7773260.jpg);
+  background-position: fixed;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -25,7 +26,7 @@ body {
 }
 .navigation {
   margin: 20px;
-  width: auto;
+  width: fit-content;
   height: 55px;
   background: rgba(0,0,0,0.5);
   display: flex;
@@ -90,19 +91,7 @@ body {
   transform: translateY(-3px);
   font-size: 1.5em;
 }
-@media only screen and (max-width:500px)
-{
-  .navigation
-  {
-    width: 90%;
-    height: 70px;
-    padding: 0px;
-    margin-bottom: 40px;
-  }
-.navigation ul li a .icon {size: 6rem;}
-.navigation ul li a .text {font-size: 2rem;}
 
-}
     /*-------------- */
     /*  WELCOME MSG  */
     /* ------------- */
@@ -212,15 +201,9 @@ animation: shine 2s forwards, blink 6s 1.5s infinite;
   97% {opacity: 0.93;}
   to {opacity: 1;}
 }
-@media only screen and (max-width:900px)
-{
- .sign{
-   padding: 5px;
-   font-size: 5em;}
-}
 
     /* --------------- */
-    /*  INPUT WINDIOW  */
+    /*  INPUT WINDOW  */
     /* --------------- */
 
 .container_input
@@ -229,7 +212,8 @@ animation: shine 2s forwards, blink 6s 1.5s infinite;
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .i_style {
   position: relative;
@@ -406,3 +390,44 @@ a{
 .twitter {color: #2ab3f3;}
 .whatsapp{color: #19da43;}
 .gmail{color: #EA4335;}
+
+@media only screen and (max-width:950px) {
+  .sign{
+    padding: 5px;
+    font-size: 5em;
+  }
+}
+
+@media only screen and (max-width:640px)
+{
+  .navigation
+  {
+    height: 70px;
+    margin-bottom: 40px;
+  }
+  .navigation ul li {
+    width: 70px;
+  }
+  .navigation ul li a .icon {
+    font-size: 2.5rem;
+    line-height: 50px;
+  }
+  .navigation ul li:hover a .icon {
+    font-size: 3rem;
+    transform: translateY(65px);
+  }
+  .navigation ul li a .text {font-size: .5rem;}
+  .navigation ul li:hover a .text {font-size: 1rem;}
+
+  .sign{
+    padding: 5px;
+    font-size: 3.2em;
+  }
+
+  .container_input{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .i_style { width: 350px;}
+}

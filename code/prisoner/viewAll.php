@@ -28,7 +28,7 @@
 <body class="bg-slate-300 overflow-x-hidden">
     <section class='w-full max-h-fit flex flex-col pb-8'>
         <h1 class="my-4 text-center font-semibold text-5xl text-indigo-700">View All Prisoners</h1>
-        <div class="mt-4 mx-auto h-fit">
+        <div class="mt-4 mx-auto h-fit px-6">
             <table>
                 <thead class="text-blue-700">
                     <tr>
@@ -48,26 +48,23 @@
                     $select="select * from prisoner";
                     $q1=mysqli_query($connection,$select);
                     $no=mysqli_num_rows($q1);
-                    if($no)
-                    {
-                        while($data=mysqli_fetch_assoc($q1))
-                        {
-                        ?>
-                            <tr>
-                                <td class="px-8 border-stone-900 border-2"> <?php echo $data['name'];?></td>
-                                <td class="px-8 border-stone-900 border-2"> <?php echo $data['prisoner_id'];?></td>
-                                <td class="px-8 border-stone-900 border-2"> <?php echo $data['penal_code'];?></td>
-                                <td class="px-8 border-stone-900 border-2"> <?php echo $data['medical'];?></td>
-                                <td class="px-8 border-stone-900 border-2"> <?php echo $data['arrest_date'];?></td>
-                                <td class="px-8 border-stone-900 border-2"> <?php echo $data['punishment'];?></td>
-                                <td class="px-8 border-stone-900 border-2"> <?php echo $data['phone_no'];?></td>
-                                <td class="px-8 border-stone-900 border-2"><a class="text-blue-500 no-underline hover:underline ..." href="viewCriminal.php?id=<?php echo $data['prisoner_id'];?>">View More</a></td>
-                            </tr>
-                        <?php
+                    if($no) {
+                        while($data=mysqli_fetch_assoc($q1)) {
+                            ?>
+                                <tr>
+                                    <td class="px-8 border-stone-900 border-2"> <?php echo $data['name'];?></td>
+                                    <td class="px-8 border-stone-900 border-2"> <?php echo $data['prisoner_id'];?></td>
+                                    <td class="px-8 border-stone-900 border-2"> <?php echo $data['penal_code'];?></td>
+                                    <td class="px-8 border-stone-900 border-2"> <?php echo $data['medical'];?></td>
+                                    <td class="px-8 border-stone-900 border-2"> <?php echo $data['arrest_date'];?></td>
+                                    <td class="px-8 border-stone-900 border-2"> <?php echo $data['punishment'];?></td>
+                                    <td class="px-8 border-stone-900 border-2"> <?php echo $data['phone_no'];?></td>
+                                    <td class="px-8 border-stone-900 border-2"><a class="text-blue-500 no-underline hover:underline" href="viewCriminal.php?id=<?php echo $data['prisoner_id'];?>">View More</a></td>
+                                </tr>
+                            <?php
                         }
                     }
-                    else
-                    {
+                    else {
                         ?>
                             <script>
                                 alert("No Prisoners to view !!");
@@ -79,7 +76,7 @@
                 </tbody>
             </table>
         </div>
-        <div class="mx-auto mt-10">
+        <div class="mt-10 mx-auto">
             <a href="work.php" class="text-white bg-gradient-to-r from-green-400 to-blue-400 border-0 py-2 px-8 focus:outline-none hover:from-pink-500 hover:to-yellow-500  rounded-full text-lg shadow-xl shadow-black">Back</a>
         </div>
     </section>
