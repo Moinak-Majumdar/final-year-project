@@ -42,8 +42,8 @@
             <!--HL1                           add                                            -->
             <div>
                 <form action="<?php echo htmlentities($_SERVER['PHP_SELF']);?>" method="post" autocomplete="off">
-                    <label class="text">Add New Prisoner</label>
-                    <input type="text" name='prisoner_id1' placeholder="Prisoner ID"
+                    <label class="text">Add New Criminal</label>
+                    <input type="text" name='prisoner_id1' placeholder="Criminal ID"
                         class="bg-gray-800 bg-opacity-40 rounded border border-indigo-500 focus:border-indigo-600 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-400 text-base outline-none text-gray-100 py-2 px-3 leading-8 transition-colors duration-200 ease-in-out" required><br>
                     <button class="button b1" type="submit" name="submit1">Add</button>
                 </form>              
@@ -111,8 +111,8 @@
             <!--Hl3                                     update                               -->
             <div>
                     <form action="<?php echo htmlentities($_SERVER['PHP_SELF']);?>" method="post" autocomplete="off">
-                        <label class="text">Update Prisoner Information</label>
-                        <input type="text" name="prisoner_id2" placeholder="Prisoner ID" required
+                        <label class="text">Update Criminal Information</label>
+                        <input type="text" name="prisoner_id2" placeholder="Criminal ID" required
                             class="bg-gray-800 bg-opacity-40 rounded border border-emerald-500 focus:border-emerald-600 focus:bg-gray-900 focus:ring-2 focus:ring-emerald-400 text-base outline-none text-gray-100 py-2 px-3 leading-8 transition-colors duration-200 ease-in-out"><br>
                         <button class="button b2" type="submit" name="submit2">Update</button>
                     </form>
@@ -151,8 +151,8 @@
             <!--HL5                          view                                            -->
             <div>
                     <form action="<?php echo htmlentities($_SERVER['PHP_SELF']);?>" method="post" autocomplete="off">
-                        <label class="text">View Prisoner Information</label>
-                        <input type="text" name="prisoner_id3" placeholder="Prisoner ID" required
+                        <label class="text">View Criminal Information</label>
+                        <input type="text" name="prisoner_id3" placeholder="Criminal ID" required
                             class="bg-gray-800 bg-opacity-40 rounded border border-amber-300 focus:border-amber-600 focus:bg-gray-900 focus:ring-2 focus:ring-amber-400 text-base outline-none text-gray-100 py-2 px-3 leading-8 transition-colors duration-200 ease-in-out"><br>
                         <button class="button b3" type="submit" name="submit3">View</button>
                     </form>
@@ -190,8 +190,8 @@
             <!--Hl6                                        remove                             -->
             <div>
                     <form action="<?php echo htmlentities($_SERVER['PHP_SELF']);?>" method="post" autocomplete="off">
-                        <label class="text">Remove Prisoner Information</label>
-                        <input type="text" name="prisoner_id4" placeholder="Prisoner ID" required
+                        <label class="text">Remove Criminal Information</label>
+                        <input type="text" name="prisoner_id4" placeholder="Criminal ID" required
                             class="bg-gray-800 bg-opacity-40 rounded border border-red-500 focus:border-red-600 focus:bg-gray-900 focus:ring-2 focus:ring-red-500 text-base outline-none text-gray-100 py-2 px-3 leading-8 transition-colors duration-200 ease-in-out"><br>
                         <button class="button b4" type="submit" name="submit4">Remove</button>
                     </form>

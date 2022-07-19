@@ -31,11 +31,11 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../icon/logo32.png"/>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../css/hide.css">
-    <title>Remove Prisoner</title>
+    <title>Remove Criminal</title>
 </head>
 <body class="bg-slate-800">
     <div class="py-10 px-40">
-        <h1 class="font-medium text-5xl text-pink-600">Remove Prisoner</h1>
+        <h1 class="font-medium text-5xl text-pink-600">Remove Criminal</h1>
         <form action="<?php echo htmlentities($_SERVER['PHP_SELF']);?>" method="post" enctype="multipart/form-data">
             <div class="mt-8 grid lg:grid-cols-5 gap-8 px-auto mx-auto">
 
@@ -47,7 +47,7 @@
                 </div>
 
                 <div>
-                <label class="text-xl text-sky-500 block mb-1 font-large">Prisoner Id :</label>
+                <label class="text-xl text-sky-500 block mb-1 font-large">Criminal Id :</label>
                 <h1 class="font-medium text-2xl text-purple-500">
                     <?php echo $_SESSION['prisoner_id']; ?></h1>
                 </div>
@@ -147,8 +147,8 @@
 
             <div class="space-x-4 space-y-4 mt-8">
                 <input type="submit" name="submit" value="Remove Prisoner"
-                class="py-2 px-4 bg-blue-500 text-white rounded-lg cursor-pointer hover:bg-blue-600 active:bg-blue-700 disabled:opacity-50 ">
-                <a href="work.php" class="cursor-pointer text-white bg-gradient-to-r from-green-400 to-blue-400 border-0 py-2 px-8 focus:outline-none hover:from-pink-500 hover:to-yellow-500  rounded-full text-lg ...">Back</a>
+                class="py-2 px-4 bg-blue-500 text-white rounded-lg cursor-pointer hover:bg-blue-600 active:bg-blue-700 disabled:opacity-50 shadow-xl shadow-black">
+                <a href="work.php" class="cursor-pointer text-white bg-gradient-to-r from-green-400 to-blue-400 border-0 py-2 px-8 focus:outline-none hover:from-pink-500 hover:to-yellow-500  rounded-full text-lg shadow-xl shadow-black">Back</a>
             </div>
         </form>
         <!-- Hl4  SVG   -->

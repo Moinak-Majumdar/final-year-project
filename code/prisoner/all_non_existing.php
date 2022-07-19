@@ -21,18 +21,18 @@
     <meta name="author" content="Moinak Majumdar"/>
     <meta name='keywords' content = 'crime, prisoner, punishment'/>
     <link rel="icon" type="image/png" sizes="32x32" href="../icon/logo32.png"/>
-    <title>Non existing Prisoner</title>
+    <title>Non existing Criminal</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../css/hide.css">
 </head>
-<body class="bg-slate-300 overflow-x-hidden">
+<body class="min-h-screen bg-gradient-to-b from-gray-100 to-gray-400">
     <section class='w-full max-h-fit flex flex-col pb-4 md:px-24 px-6'>
-        <h1 class="my-6 font-semibold text-5xl text-indigo-700 text-center">All Non Existing Prisoners</h1>
+        <h1 class="my-6 font-semibold text-5xl text-indigo-700 text-center">All Non Existing Criminal</h1>
         <div class="mt-4 mx-auto">
             <table>
                 <thead class="text-rose-600">
                     <tr>
-                        <th class="p-4 border-red-500 border-2">Prisoner ID</th>
+                        <th class="p-4 border-red-500 border-2">Criminal ID</th>
                         <th class="p-4 border-red-500 border-2">Name</th>
                         <th class="p-4 border-red-500 border-2">Sex</th>
                         <th class="p-4 border-red-500 border-2">Identity Type</th>

@@ -35,11 +35,11 @@
   <link rel ="stylesheet" href="../css/hide.css">
   <script src="../js/jquery-latest.min.js"></script>
   <script src="../js/showImg.js"></script>
-  <title>Update Prisoner</title>
+  <title>Update Criminal</title>
 </head>
 <body class="bg-slate-800">
     <div class="mt-10 lg:px-40 px-4">
-      <h1 class="font-extrabold text-5xl text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-lime-400 to-green-400">Modify Prisoner Information</h1>
+      <h1 class="font-extrabold text-5xl text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-lime-400 to-green-400">Modify Criminal Information</h1>
       <form action="<?php echo htmlentities($_SERVER['PHP_SELF']);?>" method="post" enctype="multipart/form-data" autocomplete="off">
         <div class="mt-8 grid lg:grid-cols-5 gap-8 px-auto mx-auto">
             <div>
@@ -51,7 +51,7 @@
             </div>
 
             <div>
-              <label class="text-xl text-cyan-400 block mb-1">Prisoner Id :</label>
+              <label class="text-xl text-cyan-400 block mb-1">Criminal Id :</label>
               <h1 class="font-medium text-2xl text-fuchsia-600">
                 <?php echo $_SESSION['prisoner_id']; ?></h1>
             </div>

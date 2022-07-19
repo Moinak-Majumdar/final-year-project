@@ -21,19 +21,19 @@
     <meta name="author" content="Moinak Majumdar"/>
     <meta name='keywords' content = 'crime, prisoner, punishment'/>
     <link rel="icon" type="image/png" sizes="32x32" href="../icon/logo32.png"/>
-    <title>All Prisoners</title>
+    <title>All Criminals</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel ="stylesheet" href="../css/hide.css">
 </head>
-<body class="bg-slate-300 overflow-x-hidden">
+<body class="min-h-screen bg-gradient-to-b from-gray-100 to-gray-400">
     <section class='w-full max-h-fit flex flex-col pb-8'>
-        <h1 class="my-4 text-center font-semibold text-5xl text-indigo-700">View All Prisoners</h1>
+        <h1 class="my-4 text-center font-semibold text-5xl text-indigo-700">View All Criminals</h1>
         <div class="mt-4 mx-auto h-fit px-6">
             <table>
                 <thead class="text-blue-700">
                     <tr>
                         <th class="p-4 border-blue-600 border-2">NAME</th>
-                        <th class="p-4 border-blue-600 border-2">PRISONER ID</th>
+                        <th class="p-4 border-blue-600 border-2">CRIMINAL ID</th>
                         <th class="p-4 border-blue-600 border-2">PENAL CODE</th>
                         <th class="p-4 border-blue-600 border-2">MEDICAL</th>
                         <th class="p-4 border-blue-600 border-2">DATE OF ARREST</th>

@@ -28,13 +28,13 @@ else
     <meta name="author" content="Moinak Majumdar"/>
     <meta name='keywords' content = 'crime, prisoner, punishment'/>
     <link rel="icon" type="image/png" sizes="32x32" href="../icon/logo32.png"/>
-    <title>Prisoner <?php echo "$id"; ?></title>
+    <title>Criminal <?php echo "$id"; ?></title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel ="stylesheet" href="../css/hide.css">
 </head>
 <body class="bg-zinc-200 flex">
     <div class="py-10 mx-auto px-2">
-        <h1 class="font-medium text-5xl text-purple-600 border-double border-b-2 border-purple-400">Prisoner Information</h1>
+        <h1 class="font-medium text-5xl text-purple-600 border-double border-b-2 border-purple-400">Criminal Information</h1>
         <div class="mt-8 grid lg:grid-cols-3 gap-y-0.5 gap-x-0.5">
                 <div>
                         <h1 class="text-xl text-indigo-700 block mb-1">Name :
@@ -56,7 +56,7 @@ else
                 </div>
 
                 <div>
-                        <h1 class="text-xl text-indigo-700 block mb-1">Prisoner Id :
+                        <h1 class="text-xl text-indigo-700 block mb-1">Criminal Id :
                                 <span class="font-medium text-3xl text-green-500">
                                         <?php echo $res['prisoner_id']?></span>
                         </h1>

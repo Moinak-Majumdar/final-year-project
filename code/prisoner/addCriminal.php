@@ -33,7 +33,7 @@
 <body class="bg-slate-800">
   <section>
     <div class="py-10 lg:px-40 px-4">
-      <h1 class="font-bold text-5xl text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-indigo-500 w-fit">Add Prisoner</h1>
+      <h1 class="font-bold text-5xl text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-indigo-500 w-fit">Add Criminal</h1>
      
       <!-- HL2    working  section -->
       <form action="addCriminal.php" method="post" enctype="multipart/form-data" autocomplete="off">
@@ -46,7 +46,7 @@
           </div>
 
           <div>
-            <label class="text-xl text-cyan-400 block mb-1 font-medium">Prisoner Id :</label>
+            <label class="text-xl text-cyan-400 block mb-1 font-medium">Criminal Id :</label>
             <h1 class="font-medium text-2xl text-fuchsia-600">
               <?php echo $_SESSION['prisoner_id']; ?></h1>
           </div>

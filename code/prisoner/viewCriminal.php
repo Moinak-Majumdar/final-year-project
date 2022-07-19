@@ -26,7 +26,7 @@ if(isset($_GET['id']))
     <meta name="author" content="Moinak Majumdar"/>
     <meta name='keywords' content = 'crime, prisoner, punishment'/>
     <link rel="icon" type="image/png" sizes="32x32" href="../icon/logo32.png"/>
-    <title>Prisoner <?php echo "$id"; ?></title>
+    <title>Criminal <?php echo "$id"; ?></title>
     <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel ="stylesheet" href="../css/hide.css">
@@ -51,7 +51,7 @@ if(isset($_GET['id']))
 <section class='mb-8'>
     <div class="lg:px-40 px-4">
         <div id="pdf">
-            <h1 class="font-bold text-5xl text-purple-600 border-double border-b-2 border-purple-400 w-fit">Prisoner Information</h1>
+            <h1 class="font-bold text-5xl text-purple-600 border-double border-b-2 border-purple-400 w-fit">Criminal Information</h1>
             <div class="mt-8 grid xl:gird-cols-3 lg:grid-cols-3 sm:grid-cols-1 grid-cols-1 gap-y-0.5 gap-x-0.5">
                 <div>
                     <h1 class="text-xl text-indigo-700 block mb-1 font-bold">Name :
@@ -74,7 +74,7 @@ if(isset($_GET['id']))
                 </div>
 
                 <div>
-                    <h1 class="text-xl text-indigo-700 block mb-1 font-bold">Prisoner Id :
+                    <h1 class="text-xl text-indigo-700 block mb-1 font-bold">Criminal Id :
                         <span class="ml-2 font-medium text-3xl text-green-500">
                             <?php echo $res['prisoner_id']?></span>
                     </h1>
