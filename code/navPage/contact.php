@@ -109,8 +109,12 @@
                 </div>
             </div>
         </form>
-        <footer class='mt-auto'>
-            <h2 class="w-full text-center text-white bg-black bg-opacity-50">Copyright &copy; Criminal System - All rights reserved</h2>
+        <footer class='mt-auto pt-6'>
+            <h2 class="w-full text-center text-white bg-black bg-opacity-50 py-4">
+               <span>
+                Copyright &copy; Criminal System - All rights reserved
+               </span>
+            </h2>
         </footer>
     </body> 
 </html>

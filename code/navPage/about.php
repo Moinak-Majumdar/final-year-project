@@ -59,7 +59,7 @@
                 </ul>
             </div>
         </div>
-        <section class="text-gray-300 body-font overflow-hidden">
+        <section class="text-gray-300 body-font overflow-hidden md:px-0 px-6">
             <div class="container mt-12 mx-auto px-2 md:px-6">
                 <div class="-my-8 divide-y-2">
                     <div class="py-8 flex flex-wrap md:flex-nowrap">
@@ -84,9 +84,9 @@
                 </div>
             </div>
         </section>
-        <footer class='mt-auto'>
-            <h2 class="w-full text-center text-white bg-black bg-opacity-50">
-               <span class="mt-8">
+        <footer class='mt-auto pt-6'>
+            <h2 class="w-full text-center text-white bg-black bg-opacity-50 py-4">
+               <span>
                 Copyright &copy; Criminal System - All rights reserved
                </span>
             </h2>
