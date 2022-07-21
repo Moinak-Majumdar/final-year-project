@@ -32,8 +32,8 @@ else
     <link rel="stylesheet" href="../css/style.css">
     <link rel ="stylesheet" href="../css/hide.css">
 </head>
-<body class="bg-zinc-200 flex">
-    <div class="py-10 mx-auto px-2">
+<body class="bg-zinc-200">
+    <div class="py-10 md:px-40 px-4">
         <h1 class="font-medium text-5xl text-purple-600 border-double border-b-2 border-purple-400">Criminal Information</h1>
         <div class="mt-8 grid lg:grid-cols-3 gap-y-0.5 gap-x-0.5">
                 <div>

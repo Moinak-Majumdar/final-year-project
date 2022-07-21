@@ -49,7 +49,7 @@ if(isset($_GET['id']))
 </head>
 <body class="bg-slate-200">
 <section class='mb-8'>
-    <div class="lg:px-40 px-4">
+    <div class="md:px-40 px-4">
         <div id="pdf">
             <h1 class="font-bold text-5xl text-purple-600 border-double border-b-2 border-purple-400 w-fit">Criminal Information</h1>
             <div class="mt-8 grid xl:gird-cols-3 lg:grid-cols-3 sm:grid-cols-1 grid-cols-1 gap-y-0.5 gap-x-0.5">
