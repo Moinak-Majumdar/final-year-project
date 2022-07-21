@@ -23,7 +23,7 @@
   <meta name="author" content="Moinak Majumdar"/>
   <meta name='keywords' content = 'crime, prisoner, punishment'/>
   <link rel="icon" type="image/png" sizes="32x32" href="../icon/logo32.png"/>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/hide.css">
   <script src="../js/jquery-latest.min.js"></script>
   <script src="../js/showImg.js"></script>

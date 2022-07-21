@@ -12,8 +12,8 @@
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         <script src="js/show_pass.js"></script>
-        <script src="https://cdn.tailwindcss.com"></script>
-        <link rel ="stylesheet" href="../css/hide.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/hide.css">
         <link rel="stylesheet" href="../css/index.css">
     </head>
     <body class='min-h-screen flex flex-col'>

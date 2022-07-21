@@ -22,10 +22,10 @@
     <meta name='keywords' content = 'crime, prisoner, punishment'/>
     <link rel="icon" type="image/png" sizes="32x32" href="../icon/logo32.png"/>
     <title>All Criminals</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/style.css">
     <link rel ="stylesheet" href="../css/hide.css">
 </head>
-<body class="min-h-screen bg-gradient-to-b from-gray-100 to-gray-400">
+<body class="min-h-screen bg-gray-300">
     <section class='w-full max-h-fit flex flex-col pb-8'>
         <h1 class="my-4 text-center font-semibold text-5xl text-indigo-700">View All Criminals</h1>
         <div class="mt-4 mx-auto h-fit px-6">

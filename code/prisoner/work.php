@@ -22,8 +22,8 @@
     <meta name='keywords' content = 'crime, prisoner, punishment'/>
     <link rel="icon" type="image/png" sizes="32x32" href="../icon/logo32.png"/>
     <title>Main Page</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel ="stylesheet" href="../css/hide.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/hide.css">
     <link rel="stylesheet" href="../css/work.css">
 </head>
 <body class="text-gray-400 bg-gray-800 body-font overflow-x-hidden">

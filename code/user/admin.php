@@ -12,7 +12,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../icon/logo32.png"/>
     <title>Administrator</title>
     <script src="../js/show_pass.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/hide.css">
 </head>
 <body class="text-gray-600 bg-slate-400 body-font">

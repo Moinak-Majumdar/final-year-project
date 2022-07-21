@@ -23,7 +23,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../icon/logo32.png"/>
     <title>ADD USER</title>
     <script src="../js/show_pass.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/hide.css">
 </head>
 <body class="bg-gray-300 h-full w-full flex justify-center items-center">

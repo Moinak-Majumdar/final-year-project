@@ -28,7 +28,7 @@ if(isset($_GET['id']))
     <link rel="icon" type="image/png" sizes="32x32" href="../icon/logo32.png"/>
     <title>Criminal <?php echo "$id"; ?></title>
     <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/style.css">
     <link rel ="stylesheet" href="../css/hide.css">
     <script>
         function generatePDF()

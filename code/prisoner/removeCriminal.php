@@ -29,12 +29,12 @@
     <meta name="author" content="Moinak Majumdar"/>
     <meta name='keywords' content = 'crime, prisoner, punishment'/>
     <link rel="icon" type="image/png" sizes="32x32" href="../icon/logo32.png"/>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/hide.css">
     <title>Remove Criminal</title>
 </head>
 <body class="bg-slate-800">
-    <div class="py-10 px-40">
+    <div class="py-10 md:px-40 px-6">
         <h1 class="font-medium text-5xl text-pink-600">Remove Criminal</h1>
         <form action="<?php echo htmlentities($_SERVER['PHP_SELF']);?>" method="post" enctype="multipart/form-data">
             <div class="mt-8 grid lg:grid-cols-5 gap-8 px-auto mx-auto">
